@@ -1,0 +1,1243 @@
+/* =========================================================
+   SOCIAL ATELIER
+========================================================= */
+
+.social-atelier {
+  --atelier-bg: #08090b;
+  --atelier-card: #111114;
+  --atelier-white: #f5f3f1;
+  --atelier-muted: #a7a5a5;
+  --atelier-beige: #d8b79f;
+  --atelier-border: rgba(255, 255, 255, 0.10);
+  --atelier-divider: rgba(255, 255, 255, 0.13);
+  --atelier-green: #2ed66d;
+
+  width: 100%;
+  min-height: 860px;
+  box-sizing: border-box;
+  padding: 98px 0 157px;
+  background: var(--atelier-bg);
+  color: var(--atelier-white);
+  overflow: hidden;
+}
+
+.social-atelier *,
+.social-atelier *::before,
+.social-atelier *::after {
+  box-sizing: border-box;
+}
+
+
+/* =========================================================
+   HEADING
+========================================================= */
+
+.social-atelier-heading {
+  width: 100%;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.social-eyebrow {
+  margin: 0 0 13px;
+  color: var(--atelier-beige);
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 10px;
+  font-weight: 600;
+  line-height: 1;
+  letter-spacing: 4px;
+  text-transform: uppercase;
+}
+
+.social-atelier-heading h1 {
+  margin: 0;
+  color: var(--atelier-white);
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 48px;
+  font-weight: 400;
+  line-height: 1.05;
+  letter-spacing: -1px;
+}
+
+.social-atelier-heading h1 span {
+  display: block;
+  margin-top: 3px;
+  color: var(--atelier-beige);
+  font-style: italic;
+  font-weight: 400;
+}
+
+.social-description {
+  max-width: 900px;
+  margin: 24px auto 0;
+  color: var(--atelier-muted);
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 1.65;
+  opacity: 0.78;
+}
+
+
+/* =========================================================
+   CARDS CONTAINER
+========================================================= */
+
+.social-cards {
+  width: calc(100% - 150px);
+  max-width: 1620px;
+  margin: 79px auto 0;
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 44px;
+}
+
+
+/* =========================================================
+   CARD
+========================================================= */
+
+.social-card {
+  width: 100%;
+  height: 307px;
+  padding: 44px;
+  background: var(--atelier-card);
+  border: 1px solid var(--atelier-border);
+  border-radius: 22px;
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.25);
+  display: flex;
+  flex-direction: column;
+}
+
+.social-card-top {
+  width: 100%;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 18px;
+}
+
+
+/* =========================================================
+   ICON BOX
+========================================================= */
+
+.social-icon-box {
+  width: 66px;
+  height: 66px;
+  min-width: 66px;
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  border-radius: 16px;
+  background: #18181c;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.social-icon {
+  width: 28px;
+  height: 28px;
+  object-fit: contain;
+  display: block;
+}
+
+
+/* =========================================================
+   PILL
+========================================================= */
+
+.social-pill {
+  min-height: 34px;
+  margin-top: 16px;
+  padding: 8px 16px 7px;
+  border: 1px solid rgba(216, 183, 159, 0.48);
+  border-radius: 30px;
+  color: var(--atelier-beige);
+  background: transparent;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 11px;
+  font-weight: 600;
+  line-height: 1;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  white-space: nowrap;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.whatsapp-pill {
+  gap: 8px;
+}
+
+.status-dot {
+  width: 8px;
+  height: 8px;
+  min-width: 8px;
+  border-radius: 50%;
+  background: var(--atelier-green);
+  display: inline-block;
+}
+
+
+/* =========================================================
+   CARD CONTENT
+========================================================= */
+
+.social-card-content {
+  margin-top: auto;
+}
+
+.social-card h2 {
+  margin: 0;
+  color: var(--atelier-white);
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 48px;
+  font-weight: 400;
+  line-height: 1;
+  letter-spacing: -1px;
+  white-space: nowrap;
+}
+
+.social-divider {
+  width: 100%;
+  height: 1px;
+  margin-top: 26px;
+  background: var(--atelier-divider);
+}
+
+
+/* =========================================================
+   BOTTOM ACTION
+========================================================= */
+
+.social-action {
+  width: 100%;
+  margin-top: 23px;
+  color: var(--atelier-beige);
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 15px;
+
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 15px;
+  font-weight: 600;
+  line-height: 1;
+  letter-spacing: 4px;
+  white-space: nowrap;
+}
+
+.arrow-icon {
+  flex-shrink: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 19px;
+  font-weight: 400;
+  line-height: 1;
+}
+
+
+/* =========================================================
+   SMALL CHAT ICON
+========================================================= */
+
+.chat-icon {
+  position: relative;
+  width: 15px;
+  height: 13px;
+  flex-shrink: 0;
+  border: 1px solid var(--atelier-beige);
+  border-radius: 2px;
+  display: block;
+}
+
+.chat-icon::after {
+  content: "";
+  position: absolute;
+  left: 2px;
+  bottom: -4px;
+  width: 5px;
+  height: 5px;
+  border-left: 1px solid var(--atelier-beige);
+  border-bottom: 1px solid var(--atelier-beige);
+  background: var(--atelier-card);
+  transform: skewY(-35deg);
+}
+
+.chat-icon span {
+  position: absolute;
+  left: 3px;
+  right: 3px;
+  top: 4px;
+  height: 1px;
+  background: rgba(216, 183, 159, 0.7);
+}
+
+
+/* =========================================================
+   1440px
+========================================================= */
+
+@media (max-width: 1440px) {
+  .social-atelier {
+    padding-top: 92px;
+  }
+
+  .social-cards {
+    width: calc(100% - 110px);
+    gap: 38px;
+    margin-top: 74px;
+  }
+
+  .social-card {
+    padding: 40px;
+  }
+
+  .social-card h2 {
+    font-size: 44px;
+  }
+}
+
+
+/* =========================================================
+   1366px
+========================================================= */
+
+@media (max-width: 1366px) {
+  .social-atelier {
+    padding-top: 88px;
+    padding-bottom: 130px;
+  }
+
+  .social-atelier-heading h1 {
+    font-size: 46px;
+  }
+
+  .social-description {
+    font-size: 19px;
+  }
+
+  .social-cards {
+    width: calc(100% - 90px);
+    gap: 32px;
+    margin-top: 72px;
+  }
+
+  .social-card {
+    height: 300px;
+    padding: 36px;
+  }
+
+  .social-icon-box {
+    width: 64px;
+    height: 64px;
+    min-width: 64px;
+  }
+
+  .social-card h2 {
+    font-size: 42px;
+  }
+
+  .social-divider {
+    margin-top: 24px;
+  }
+
+  .social-action {
+    margin-top: 21px;
+    font-size: 14px;
+    letter-spacing: 3.5px;
+  }
+}
+
+
+/* =========================================================
+   1024px
+========================================================= */
+
+@media (max-width: 1024px) {
+  .social-atelier {
+    min-height: auto;
+    padding: 78px 0 90px;
+  }
+
+  .social-eyebrow {
+    font-size: 9px;
+    letter-spacing: 3.5px;
+  }
+
+  .social-atelier-heading h1 {
+    font-size: 40px;
+  }
+
+  .social-description {
+    max-width: 760px;
+    margin-top: 21px;
+    padding: 0 20px;
+    font-size: 17px;
+    line-height: 1.6;
+  }
+
+  .social-cards {
+    width: calc(100% - 50px);
+    gap: 22px;
+    margin-top: 62px;
+  }
+
+  .social-card {
+    height: 285px;
+    padding: 28px;
+    border-radius: 20px;
+  }
+
+  .social-card-top {
+    gap: 10px;
+  }
+
+  .social-icon-box {
+    width: 58px;
+    height: 58px;
+    min-width: 58px;
+    border-radius: 14px;
+  }
+
+  .social-icon {
+    width: 25px;
+    height: 25px;
+  }
+
+  .social-pill {
+    min-height: 30px;
+    padding: 7px 10px;
+    font-size: 8.5px;
+    letter-spacing: 2px;
+  }
+
+  .status-dot {
+    width: 7px;
+    height: 7px;
+    min-width: 7px;
+  }
+
+  .social-card h2 {
+    font-size: 34px;
+    letter-spacing: -0.5px;
+  }
+
+  .social-divider {
+    margin-top: 20px;
+  }
+
+  .social-action {
+    margin-top: 18px;
+    font-size: 11px;
+    letter-spacing: 2.5px;
+  }
+
+  .arrow-icon {
+    font-size: 17px;
+  }
+}
+
+
+/* =========================================================
+   768px
+========================================================= */
+
+@media (max-width: 768px) {
+  .social-atelier {
+    padding: 65px 0 70px;
+  }
+
+  .social-eyebrow {
+    padding: 0 20px;
+    font-size: 9px;
+    letter-spacing: 3px;
+  }
+
+  .social-atelier-heading h1 {
+    padding: 0 18px;
+    font-size: 38px;
+    line-height: 1.08;
+  }
+
+  .social-atelier-heading h1 span {
+    margin-top: 5px;
+  }
+
+  .social-description {
+    max-width: 650px;
+    margin-top: 22px;
+    padding: 0 25px;
+    font-size: 16px;
+  }
+
+  .desktop-description-break {
+    display: none;
+  }
+
+  .social-cards {
+    width: 100%;
+    max-width: 520px;
+    margin-top: 50px;
+    padding: 0 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 22px;
+  }
+
+  .social-card {
+    width: 100%;
+    height: 270px;
+    padding: 30px;
+    border-radius: 20px;
+  }
+
+  .social-card h2 {
+    font-size: 38px;
+  }
+
+  .social-pill {
+    font-size: 9px;
+    letter-spacing: 2.5px;
+  }
+
+  .social-action {
+    font-size: 12px;
+    letter-spacing: 3px;
+  }
+}
+
+
+/* =========================================================
+   600px
+========================================================= */
+
+@media (max-width: 600px) {
+  .social-atelier {
+    padding: 55px 0 60px;
+  }
+
+  .social-eyebrow {
+    margin-bottom: 14px;
+    font-size: 8px;
+    letter-spacing: 2.7px;
+  }
+
+  .social-atelier-heading h1 {
+    font-size: 34px;
+    line-height: 1.08;
+  }
+
+  .social-description {
+    margin-top: 20px;
+    font-size: 15px;
+    line-height: 1.55;
+  }
+
+  .social-cards {
+    margin-top: 42px;
+    padding: 0 15px;
+    gap: 18px;
+  }
+
+  .social-card {
+    height: 250px;
+    padding: 25px;
+    border-radius: 18px;
+  }
+
+  .social-icon-box {
+    width: 56px;
+    height: 56px;
+    min-width: 56px;
+    border-radius: 14px;
+  }
+
+  .social-icon {
+    width: 24px;
+    height: 24px;
+  }
+
+  .social-pill {
+    max-width: calc(100% - 70px);
+    min-height: 29px;
+    padding: 7px 10px;
+    font-size: 8px;
+    letter-spacing: 2px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+
+  .social-card h2 {
+    font-size: 34px;
+  }
+
+  .social-divider {
+    margin-top: 18px;
+  }
+
+  .social-action {
+    margin-top: 17px;
+    font-size: 11px;
+    letter-spacing: 2.5px;
+  }
+}
+
+
+/* =========================================================
+   480px
+========================================================= */
+
+@media (max-width: 480px) {
+  .social-atelier {
+    padding: 48px 0 50px;
+  }
+
+  .social-eyebrow {
+    font-size: 7.5px;
+    letter-spacing: 2.3px;
+  }
+
+  .social-atelier-heading h1 {
+    padding: 0 15px;
+    font-size: 30px;
+    letter-spacing: -0.5px;
+  }
+
+  .social-description {
+    padding: 0 22px;
+    font-size: 14px;
+  }
+
+  .social-cards {
+    margin-top: 36px;
+    padding: 0 15px;
+    gap: 16px;
+  }
+
+  .social-card {
+    height: 225px;
+    padding: 22px;
+    border-radius: 17px;
+  }
+
+  .social-card-top {
+    gap: 8px;
+  }
+
+  .social-icon-box {
+    width: 52px;
+    height: 52px;
+    min-width: 52px;
+    border-radius: 13px;
+  }
+
+  .social-icon {
+    width: 22px;
+    height: 22px;
+  }
+
+  .social-pill {
+    margin-top: 11px;
+    max-width: calc(100% - 62px);
+    min-height: 27px;
+    padding: 6px 8px;
+    font-size: 7px;
+    letter-spacing: 1.7px;
+  }
+
+  .status-dot {
+    width: 6px;
+    height: 6px;
+    min-width: 6px;
+  }
+
+  .whatsapp-pill {
+    gap: 6px;
+  }
+
+  .social-card h2 {
+    font-size: 30px;
+  }
+
+  .social-divider {
+    margin-top: 16px;
+  }
+
+  .social-action {
+    margin-top: 15px;
+    font-size: 9.5px;
+    letter-spacing: 2px;
+  }
+
+  .arrow-icon {
+    font-size: 16px;
+  }
+
+  .chat-icon {
+    width: 14px;
+    height: 12px;
+  }
+}
+
+
+/* =========================================================
+   390px
+========================================================= */
+
+@media (max-width: 390px) {
+  .social-atelier {
+    padding-top: 43px;
+    padding-bottom: 45px;
+  }
+
+  .social-eyebrow {
+    padding: 0 15px;
+    font-size: 7px;
+    letter-spacing: 2px;
+  }
+
+  .social-atelier-heading h1 {
+    font-size: 27px;
+  }
+
+  .social-description {
+    margin-top: 18px;
+    padding: 0 20px;
+    font-size: 13px;
+  }
+
+  .social-cards {
+    margin-top: 32px;
+    padding: 0 15px;
+  }
+
+  .social-card {
+    height: 215px;
+    padding: 20px;
+  }
+
+  .social-icon-box {
+    width: 50px;
+    height: 50px;
+    min-width: 50px;
+  }
+
+  .social-icon {
+    width: 21px;
+    height: 21px;
+  }
+
+  .social-pill {
+    margin-top: 10px;
+    max-width: calc(100% - 59px);
+    padding: 6px 7px;
+    font-size: 6.5px;
+    letter-spacing: 1.5px;
+  }
+
+  .social-card h2 {
+    font-size: 27px;
+  }
+
+  .social-divider {
+    margin-top: 15px;
+  }
+
+  .social-action {
+    margin-top: 14px;
+    font-size: 8.5px;
+    letter-spacing: 1.7px;
+  }
+}
+
+
+/* =========================================================
+   320px
+========================================================= */
+
+@media (max-width: 320px) {
+  .social-atelier {
+    padding: 38px 0 40px;
+  }
+
+  .social-eyebrow {
+    font-size: 6.5px;
+    letter-spacing: 1.6px;
+  }
+
+  .social-atelier-heading h1 {
+    padding: 0 12px;
+    font-size: 24px;
+  }
+
+  .social-description {
+    padding: 0 17px;
+    font-size: 12px;
+  }
+
+  .social-cards {
+    margin-top: 28px;
+    padding: 0 15px;
+    gap: 14px;
+  }
+
+  .social-card {
+    height: 200px;
+    padding: 18px;
+    border-radius: 16px;
+  }
+
+  .social-icon-box {
+    width: 46px;
+    height: 46px;
+    min-width: 46px;
+    border-radius: 12px;
+  }
+
+  .social-icon {
+    width: 19px;
+    height: 19px;
+  }
+
+  .social-pill {
+    margin-top: 8px;
+    max-width: calc(100% - 54px);
+    min-height: 25px;
+    padding: 5px 6px;
+    font-size: 5.8px;
+    letter-spacing: 1.2px;
+  }
+
+  .status-dot {
+    width: 5px;
+    height: 5px;
+    min-width: 5px;
+  }
+
+  .whatsapp-pill {
+    gap: 4px;
+  }
+
+  .social-card h2 {
+    font-size: 24px;
+  }
+
+  .social-divider {
+    margin-top: 13px;
+  }
+
+  .social-action {
+    margin-top: 12px;
+    font-size: 7.2px;
+    letter-spacing: 1.3px;
+  }
+
+  .arrow-icon {
+    font-size: 14px;
+  }
+
+  .chat-icon {
+    width: 12px;
+    height: 10px;
+  }
+}
+
+
+/* =========================================================
+   PREVENT MOBILE OVERFLOW
+========================================================= */
+
+@media (max-width: 768px) {
+  .social-card,
+  .social-card-top,
+  .social-card-content,
+  .social-action {
+    min-width: 0;
+  }
+
+  .social-action > span:first-child {
+    min-width: 0;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+}
+
+
+
+/* =========================================================
+   SOCIAL ATELIER SCROLL REVEAL
+========================================================= */
+
+/* ---------------------------------------------------------
+   INITIAL HEADING STATE
+--------------------------------------------------------- */
+
+.social-eyebrow,
+.social-atelier-heading h1,
+.social-description {
+  opacity: 0;
+  transform: translateY(35px);
+
+  transition:
+    opacity 0.8s ease,
+    transform 0.8s cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+
+/* ---------------------------------------------------------
+   INITIAL CARD STATE
+--------------------------------------------------------- */
+
+.social-card {
+  opacity: 0;
+  transform: translateY(70px) scale(0.96);
+
+  transition:
+    opacity 0.85s ease,
+    transform 0.9s cubic-bezier(0.22, 1, 0.36, 1),
+    border-color 0.4s ease,
+    box-shadow 0.4s ease;
+}
+
+
+/* ---------------------------------------------------------
+   HEADING REVEAL
+--------------------------------------------------------- */
+
+.social-atelier.social-visible
+.social-eyebrow {
+  opacity: 1;
+  transform: translateY(0);
+
+  transition-delay: 0.05s;
+}
+
+
+.social-atelier.social-visible
+.social-atelier-heading h1 {
+  opacity: 1;
+  transform: translateY(0);
+
+  transition-delay: 0.18s;
+}
+
+
+.social-atelier.social-visible
+.social-description {
+  opacity: 1;
+  transform: translateY(0);
+
+  transition-delay: 0.32s;
+}
+
+
+/* =========================================================
+   CARD STAGGER ANIMATION
+========================================================= */
+
+.social-atelier.social-visible
+.instagram-card {
+  opacity: 1;
+  transform: translateY(0) scale(1);
+
+  transition-delay: 0.48s;
+}
+
+
+.social-atelier.social-visible
+.facebook-card {
+  opacity: 1;
+  transform: translateY(0) scale(1);
+
+  transition-delay: 0.65s;
+}
+
+
+.social-atelier.social-visible
+.whatsapp-card {
+  opacity: 1;
+  transform: translateY(0) scale(1);
+
+  transition-delay: 0.82s;
+}
+
+
+/* =========================================================
+   CARD INNER CONTENT REVEAL
+========================================================= */
+
+/* Icons */
+
+.social-icon-box {
+  opacity: 0;
+  transform: scale(0.8);
+
+  transition:
+    opacity 0.6s ease,
+    transform 0.7s cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+
+/* Pills */
+
+.social-pill {
+  opacity: 0;
+  transform: translateX(20px);
+
+  transition:
+    opacity 0.6s ease,
+    transform 0.7s cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+
+/* Card titles */
+
+.social-card h2 {
+  opacity: 0;
+  transform: translateY(20px);
+
+  transition:
+    opacity 0.7s ease,
+    transform 0.7s cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+
+/* Dividers */
+
+.social-divider {
+  transform: scaleX(0);
+  transform-origin: left center;
+
+  transition:
+    transform 0.7s cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+
+/* Actions */
+
+.social-action {
+  opacity: 0;
+  transform: translateY(15px);
+
+  transition:
+    opacity 0.7s ease,
+    transform 0.7s cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+
+/* =========================================================
+   INSTAGRAM INNER REVEAL
+========================================================= */
+
+.social-atelier.social-visible
+.instagram-card .social-icon-box {
+  opacity: 1;
+  transform: scale(1);
+  transition-delay: 0.62s;
+}
+
+
+.social-atelier.social-visible
+.instagram-card .social-pill {
+  opacity: 1;
+  transform: translateX(0);
+  transition-delay: 0.68s;
+}
+
+
+.social-atelier.social-visible
+.instagram-card h2 {
+  opacity: 1;
+  transform: translateY(0);
+  transition-delay: 0.72s;
+}
+
+
+.social-atelier.social-visible
+.instagram-card .social-divider {
+  transform: scaleX(1);
+  transition-delay: 0.80s;
+}
+
+
+.social-atelier.social-visible
+.instagram-card .social-action {
+  opacity: 1;
+  transform: translateY(0);
+  transition-delay: 0.88s;
+}
+
+
+/* =========================================================
+   FACEBOOK INNER REVEAL
+========================================================= */
+
+.social-atelier.social-visible
+.facebook-card .social-icon-box {
+  opacity: 1;
+  transform: scale(1);
+  transition-delay: 0.79s;
+}
+
+
+.social-atelier.social-visible
+.facebook-card .social-pill {
+  opacity: 1;
+  transform: translateX(0);
+  transition-delay: 0.85s;
+}
+
+
+.social-atelier.social-visible
+.facebook-card h2 {
+  opacity: 1;
+  transform: translateY(0);
+  transition-delay: 0.89s;
+}
+
+
+.social-atelier.social-visible
+.facebook-card .social-divider {
+  transform: scaleX(1);
+  transition-delay: 0.97s;
+}
+
+
+.social-atelier.social-visible
+.facebook-card .social-action {
+  opacity: 1;
+  transform: translateY(0);
+  transition-delay: 1.05s;
+}
+
+
+/* =========================================================
+   WHATSAPP INNER REVEAL
+========================================================= */
+
+.social-atelier.social-visible
+.whatsapp-card .social-icon-box {
+  opacity: 1;
+  transform: scale(1);
+  transition-delay: 0.96s;
+}
+
+
+.social-atelier.social-visible
+.whatsapp-card .social-pill {
+  opacity: 1;
+  transform: translateX(0);
+  transition-delay: 1.02s;
+}
+
+
+.social-atelier.social-visible
+.whatsapp-card h2 {
+  opacity: 1;
+  transform: translateY(0);
+  transition-delay: 1.06s;
+}
+
+
+.social-atelier.social-visible
+.whatsapp-card .social-divider {
+  transform: scaleX(1);
+  transition-delay: 1.14s;
+}
+
+
+.social-atelier.social-visible
+.whatsapp-card .social-action {
+  opacity: 1;
+  transform: translateY(0);
+  transition-delay: 1.22s;
+}
+
+
+/* =========================================================
+   CARD HOVER
+========================================================= */
+
+.social-card:hover {
+  transform: translateY(-5px) scale(1.005);
+
+  border-color: rgba(216, 183, 159, 0.28);
+
+  box-shadow:
+    0 20px 50px rgba(0, 0, 0, 0.35);
+}
+
+
+.social-icon-box {
+  transition:
+    opacity 0.6s ease,
+    transform 0.7s cubic-bezier(0.22, 1, 0.36, 1),
+    border-color 0.3s ease;
+}
+
+
+.social-card:hover .social-icon-box {
+  border-color: rgba(216, 183, 159, 0.35);
+}
+
+
+/* =========================================================
+   MOBILE ANIMATION
+========================================================= */
+
+@media (max-width: 768px) {
+
+  .social-eyebrow,
+  .social-atelier-heading h1,
+  .social-description {
+    transform: translateY(25px);
+  }
+
+  .social-card {
+    transform: translateY(50px) scale(0.97);
+  }
+
+  .social-atelier.social-visible
+  .instagram-card {
+    transition-delay: 0.40s;
+  }
+
+  .social-atelier.social-visible
+  .facebook-card {
+    transition-delay: 0.58s;
+  }
+
+  .social-atelier.social-visible
+  .whatsapp-card {
+    transition-delay: 0.76s;
+  }
+}
+
+
+/* =========================================================
+   REDUCED MOTION
+========================================================= */
+
+@media (prefers-reduced-motion: reduce) {
+
+  .social-eyebrow,
+  .social-atelier-heading h1,
+  .social-description,
+  .social-card,
+  .social-icon-box,
+  .social-pill,
+  .social-card h2,
+  .social-action {
+    opacity: 1;
+    transform: none;
+    transition: none;
+  }
+
+  .social-divider {
+    transform: scaleX(1);
+    transition: none;
+  }
+}

@@ -1,0 +1,806 @@
+/* =========================================================
+   HERO SECTION
+========================================================= */
+
+.atelier-hero {
+  --hero-bg: #0a0c0e;
+  --hero-white: #f5f3f2;
+  --hero-gray: #9b9a9d;
+  --hero-gold: #d9b79b;
+  --hero-button: #e2b999;
+
+  position: relative;
+  width: 100%;
+  min-height: calc(100vh - 138px);
+
+  background: #0a0c0e;
+
+  overflow: hidden;
+
+  color: var(--hero-white);
+
+  box-sizing: border-box;
+}
+
+
+/* =========================================================
+   SUBTLE BACKGROUND GLOW
+========================================================= */
+
+.atelier-hero::before {
+  content: "";
+
+  position: absolute;
+
+  width: 650px;
+  height: 650px;
+
+  left: -180px;
+  top: 50%;
+
+  transform: translateY(-50%);
+
+  background: radial-gradient(
+    circle,
+    rgba(217, 183, 155, 0.055) 0%,
+    rgba(217, 183, 155, 0.02) 35%,
+    transparent 72%
+  );
+
+  pointer-events: none;
+
+  opacity: 0;
+
+  transition: opacity 1.8s ease;
+}
+
+.hero-visible::before {
+  opacity: 1;
+}
+
+
+/* =========================================================
+   HERO CONTAINER
+========================================================= */
+
+.hero-container {
+  width: min(1635px, calc(100% - 120px));
+
+  min-height: calc(100vh - 138px);
+
+  margin: 0 auto;
+
+  display: grid;
+
+  grid-template-columns: 52% 48%;
+
+  align-items: center;
+
+  position: relative;
+
+  z-index: 1;
+}
+
+
+/* =========================================================
+   LEFT VISUAL
+========================================================= */
+
+.hero-visual {
+  width: 100%;
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  position: relative;
+
+  min-width: 0;
+}
+
+
+/* Image wrapper */
+
+.hero-image-wrapper {
+  width: 100%;
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  overflow: visible;
+
+  opacity: 0;
+
+  transform:
+    translateX(-70px)
+    scale(0.88);
+
+  filter: blur(8px);
+
+  transition:
+    opacity 1.1s cubic-bezier(0.22, 1, 0.36, 1),
+    transform 1.3s cubic-bezier(0.22, 1, 0.36, 1),
+    filter 1.2s ease;
+}
+
+
+/* When visible */
+
+.hero-visible .hero-image-wrapper {
+  opacity: 1;
+
+  transform:
+    translateX(0)
+    scale(1);
+
+  filter: blur(0);
+}
+
+
+/* =========================================================
+   TEETH IMAGE
+========================================================= */
+
+.hero-teeth {
+  display: block;
+
+  width: min(700px, 100%);
+
+  height: auto;
+
+  object-fit: contain;
+
+  transform-origin: center center;
+
+  animation: none;
+}
+
+
+/* Floating effect after entrance */
+
+.hero-visible .hero-teeth {
+  animation: teethFloat 6s ease-in-out 1.4s infinite;
+}
+
+
+/* =========================================================
+   TEETH FLOAT ANIMATION
+========================================================= */
+
+@keyframes teethFloat {
+
+  0% {
+    transform: translateY(0);
+  }
+
+  50% {
+    transform: translateY(-8px);
+  }
+
+  100% {
+    transform: translateY(0);
+  }
+
+}
+
+
+/* =========================================================
+   RIGHT CONTENT
+========================================================= */
+
+.hero-content {
+  width: 100%;
+
+  max-width: 720px;
+
+  padding-left: 25px;
+
+  position: relative;
+
+  z-index: 2;
+}
+
+
+/* =========================================================
+   TITLE
+========================================================= */
+
+.hero-title {
+  margin: 0;
+
+  color: var(--hero-white);
+
+  font-family:
+    "Cormorant Garamond",
+    Georgia,
+    serif;
+
+  font-size: clamp(56px, 4.25vw, 76px);
+
+  font-weight: 400;
+
+  line-height: 0.98;
+
+  letter-spacing: -2px;
+
+  overflow: hidden;
+}
+
+
+/* Each line */
+
+.title-line {
+  display: block;
+
+  opacity: 0;
+
+  transform: translateY(70px);
+
+  transition:
+    opacity 0.9s cubic-bezier(0.22, 1, 0.36, 1),
+    transform 1s cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+
+/* First line */
+
+.hero-visible .title-line:nth-child(1) {
+  opacity: 1;
+
+  transform: translateY(0);
+
+  transition-delay: 0.25s;
+}
+
+
+/* Second line */
+
+.hero-visible .title-line:nth-child(2) {
+  opacity: 1;
+
+  transform: translateY(0);
+
+  transition-delay: 0.4s;
+}
+
+
+/* Gold word */
+
+.gold-text {
+  color: var(--hero-gold);
+}
+
+
+/* =========================================================
+   DESCRIPTION
+========================================================= */
+
+.hero-description {
+  max-width: 680px;
+
+  margin: 48px 0 0;
+
+  color: var(--hero-gray);
+
+  font-family:
+    "Poppins",
+    sans-serif;
+
+  font-size: 19px;
+
+  font-weight: 400;
+
+  line-height: 1.65;
+
+  letter-spacing: 0.2px;
+
+  opacity: 0;
+
+  transform: translateY(35px);
+
+  transition:
+    opacity 0.9s ease,
+    transform 0.9s cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+
+/* Description visible */
+
+.hero-visible .hero-description {
+  opacity: 1;
+
+  transform: translateY(0);
+
+  transition-delay: 0.65s;
+}
+
+
+/* =========================================================
+   BUTTON
+========================================================= */
+
+.hero-button {
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  width: 305px;
+
+  height: 58px;
+
+  margin-top: 55px;
+
+  border-radius: 30px;
+
+  background: var(--hero-button);
+
+  color: #171310;
+
+  text-decoration: none;
+
+  font-family:
+    "Poppins",
+    sans-serif;
+
+  font-size: 12px;
+
+  font-weight: 700;
+
+  letter-spacing: 3px;
+
+  white-space: nowrap;
+
+  position: relative;
+
+  overflow: hidden;
+
+  opacity: 0;
+
+  transform: translateY(35px);
+
+  transition:
+    opacity 0.9s ease,
+    transform 0.9s cubic-bezier(0.22, 1, 0.36, 1),
+    background 0.25s ease,
+    box-shadow 0.25s ease;
+}
+
+
+/* Button visible */
+
+.hero-visible .hero-button {
+  opacity: 1;
+
+  transform: translateY(0);
+
+  transition-delay: 0.85s;
+}
+
+
+/* =========================================================
+   BUTTON SHINE
+========================================================= */
+
+.hero-button::before {
+  content: "";
+
+  position: absolute;
+
+  top: 0;
+
+  left: -120%;
+
+  width: 70%;
+
+  height: 100%;
+
+  background: linear-gradient(
+    90deg,
+    transparent,
+    rgba(255, 255, 255, 0.3),
+    transparent
+  );
+
+  transform: skewX(-20deg);
+
+  transition: left 0.7s ease;
+}
+
+
+/* Hover shine */
+
+.hero-button:hover::before {
+  left: 150%;
+}
+
+
+/* Hover */
+
+.hero-button:hover {
+  background: #e8c3a6;
+
+  transform: translateY(-3px);
+
+  box-shadow:
+    0 12px 35px rgba(226, 185, 153, 0.18);
+}
+
+
+/* Button text */
+
+.hero-button span {
+  position: relative;
+
+  z-index: 2;
+}
+
+
+/* =========================================================
+   LARGE DESKTOP
+========================================================= */
+
+@media (max-width: 1500px) {
+
+  .hero-container {
+    width: min(
+      1370px,
+      calc(100% - 90px)
+    );
+
+    grid-template-columns: 51% 49%;
+  }
+
+
+  .hero-teeth {
+    width: min(650px, 100%);
+  }
+
+
+  .hero-title {
+    font-size: clamp(
+      52px,
+      4.4vw,
+      70px
+    );
+  }
+
+
+  .hero-description {
+    font-size: 17px;
+  }
+
+}
+
+
+/* =========================================================
+   LAPTOP
+========================================================= */
+
+@media (max-width: 1200px) {
+
+  .atelier-hero {
+    min-height: calc(100vh - 120px);
+  }
+
+
+  .hero-container {
+
+    min-height: calc(100vh - 120px);
+
+    width: calc(100% - 65px);
+
+    grid-template-columns: 50% 50%;
+
+    gap: 15px;
+  }
+
+
+  .hero-teeth {
+    width: min(590px, 100%);
+  }
+
+
+  .hero-content {
+    padding-left: 15px;
+  }
+
+
+  .hero-title {
+
+    font-size: clamp(
+      48px,
+      4.7vw,
+      62px
+    );
+
+    letter-spacing: -1.5px;
+  }
+
+
+  .hero-description {
+
+    margin-top: 38px;
+
+    font-size: 16px;
+
+    line-height: 1.6;
+  }
+
+
+  .hero-button {
+
+    width: 280px;
+
+    height: 55px;
+
+    margin-top: 42px;
+  }
+
+}
+
+
+/* =========================================================
+   TABLET
+========================================================= */
+
+@media (max-width: 850px) {
+
+  .atelier-hero {
+    min-height: auto;
+  }
+
+
+  .hero-container {
+
+    min-height: auto;
+
+    width: calc(100% - 40px);
+
+    padding: 65px 0 80px;
+
+    display: flex;
+
+    flex-direction: column;
+
+    justify-content: center;
+
+    gap: 30px;
+  }
+
+
+  /* IMAGE */
+
+  .hero-visual {
+
+    width: 100%;
+
+    order: 1;
+  }
+
+
+  .hero-image-wrapper {
+
+    transform:
+      translateY(50px)
+      scale(0.9);
+  }
+
+
+  .hero-visible .hero-image-wrapper {
+
+    transform:
+      translateY(0)
+      scale(1);
+  }
+
+
+  .hero-teeth {
+    width: min(600px, 100%);
+  }
+
+
+  /* CONTENT */
+
+  .hero-content {
+
+    width: 100%;
+
+    max-width: 700px;
+
+    padding-left: 0;
+
+    text-align: center;
+
+    order: 2;
+  }
+
+
+  .hero-title {
+
+    font-size: clamp(
+      45px,
+      7vw,
+      60px
+    );
+
+    line-height: 1;
+
+    letter-spacing: -1px;
+  }
+
+
+  .hero-description {
+
+    max-width: 600px;
+
+    margin: 30px auto 0;
+
+    font-size: 16px;
+
+    line-height: 1.6;
+  }
+
+
+  .hero-button {
+
+    margin: 35px auto 0;
+  }
+
+}
+
+
+/* =========================================================
+   MOBILE
+========================================================= */
+
+@media (max-width: 600px) {
+
+  .hero-container {
+
+    width: calc(100% - 30px);
+
+    padding: 45px 0 65px;
+
+    gap: 28px;
+  }
+
+
+  .hero-teeth {
+
+    width: min(430px, 100%);
+  }
+
+
+  .hero-content {
+    max-width: 100%;
+  }
+
+
+  .hero-title {
+
+    font-size: clamp(
+      38px,
+      10vw,
+      52px
+    );
+
+    line-height: 1.02;
+
+    letter-spacing: -0.8px;
+  }
+
+
+  .hero-description {
+
+    max-width: 420px;
+
+    margin-top: 25px;
+
+    font-size: 14px;
+
+    line-height: 1.65;
+  }
+
+
+  .hero-button {
+
+    width: min(
+      285px,
+      100%
+    );
+
+    height: 54px;
+
+    margin-top: 30px;
+
+    font-size: 10px;
+
+    letter-spacing: 2.5px;
+  }
+
+}
+
+
+/* =========================================================
+   SMALL MOBILE
+========================================================= */
+
+@media (max-width: 400px) {
+
+  .hero-container {
+
+    width: calc(100% - 24px);
+
+    padding-top: 35px;
+
+    padding-bottom: 55px;
+
+    gap: 24px;
+  }
+
+
+  .hero-teeth {
+    width: 100%;
+  }
+
+
+  .hero-title {
+
+    font-size: 35px;
+
+    line-height: 1.03;
+  }
+
+
+  .hero-description {
+
+    max-width: 330px;
+
+    margin-left: auto;
+
+    margin-right: auto;
+
+    font-size: 13px;
+
+    line-height: 1.6;
+  }
+
+
+  .hero-button {
+
+    width: 260px;
+
+    height: 51px;
+
+    font-size: 9px;
+
+    letter-spacing: 2px;
+  }
+
+}
+
+
+/* =========================================================
+   REDUCE MOTION
+========================================================= */
+
+@media (prefers-reduced-motion: reduce) {
+
+  .hero-image-wrapper,
+  .title-line,
+  .hero-description,
+  .hero-button {
+
+    transition: none !important;
+
+    animation: none !important;
+  }
+
+}

@@ -1,0 +1,1676 @@
+/* =========================================================
+   REACH US
+========================================================= */
+
+.reach-us {
+  --reach-bg: #08090b;
+  --card-bg: #111114;
+
+  --text-primary: #f4f1ee;
+  --text-muted: #9a999a;
+
+  --accent: #d8b59c;
+  --accent-light: #dfb99e;
+
+  --border: rgba(255, 255, 255, 0.10);
+  --divider: rgba(255, 255, 255, 0.12);
+
+  width: 100%;
+  min-height: 860px;
+
+  padding: 12px 0 20px;
+
+  background: var(--reach-bg);
+
+  color: var(--text-primary);
+
+  overflow: hidden;
+
+  box-sizing: border-box;
+}
+
+.reach-us *,
+.reach-us *::before,
+.reach-us *::after {
+  box-sizing: border-box;
+}
+
+
+/* =========================================================
+   TOP BORDER
+========================================================= */
+
+.reach-us::before {
+  content: "";
+  display: block;
+
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+
+  height: 1px;
+
+  background: rgba(255, 255, 255, 0.08);
+}
+
+
+/* =========================================================
+   HEADER
+========================================================= */
+
+.reach-us-header {
+  width: 100%;
+  text-align: center;
+  margin: 0 auto;
+}
+
+.reach-us-eyebrow {
+  margin: 0;
+
+  color: var(--accent);
+
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 10px;
+  font-weight: 500;
+
+  line-height: 1;
+
+  letter-spacing: 4px;
+
+  text-transform: uppercase;
+}
+
+.reach-us-title {
+  margin: 28px 0 0;
+
+  color: var(--text-primary);
+
+  font-family: Georgia, "Times New Roman", serif;
+
+  font-size: 48px;
+  font-weight: 400;
+
+  line-height: 1;
+
+  letter-spacing: -1px;
+}
+
+.reach-us-description {
+  max-width: 760px;
+
+  margin: 18px auto 0;
+
+  color: var(--text-muted);
+
+  font-family: Arial, Helvetica, sans-serif;
+
+  font-size: 20px;
+  font-weight: 400;
+
+  line-height: 1.45;
+
+  opacity: 0.9;
+}
+
+
+/* =========================================================
+   MAIN CONTENT
+========================================================= */
+
+.reach-us-content {
+  width: calc(100% - 120px);
+  max-width: 1370px;
+
+  margin: 89px auto 0;
+
+  display: grid;
+
+  grid-template-columns: minmax(0, 770px) minmax(0, 530px);
+
+  gap: 75px;
+
+  align-items: stretch;
+}
+
+
+/* =========================================================
+   MAP
+========================================================= */
+
+.reach-map {
+  width: 100%;
+  height: 578px;
+
+  overflow: hidden;
+
+  border-radius: 18px;
+
+  background: #e5e5e5;
+}
+
+.reach-map-image {
+  display: block;
+
+  width: 100%;
+  height: 100%;
+
+  object-fit: cover;
+  object-position: center;
+}
+
+
+/* =========================================================
+   CONTACT CARD
+========================================================= */
+
+.contact-card {
+  width: 100%;
+  height: 578px;
+
+  padding: 38px 37px;
+
+  background: var(--card-bg);
+
+  border: 1px solid var(--border);
+
+  border-radius: 18px;
+
+  box-shadow:
+    0 15px 45px rgba(0, 0, 0, 0.25);
+
+  display: flex;
+  flex-direction: column;
+}
+
+
+/* =========================================================
+   CONTACT HEADER
+========================================================= */
+
+.contact-eyebrow {
+  margin: 0;
+
+  color: var(--accent);
+
+  font-family: Arial, Helvetica, sans-serif;
+
+  font-size: 10px;
+  font-weight: 500;
+
+  line-height: 1;
+
+  letter-spacing: 4px;
+
+  text-transform: uppercase;
+}
+
+.contact-card h2 {
+  margin: 11px 0 0;
+
+  color: #f5f2ef;
+
+  font-family: Georgia, "Times New Roman", serif;
+
+  font-size: 48px;
+  font-weight: 400;
+
+  line-height: 1;
+
+  letter-spacing: -1px;
+}
+
+.contact-description {
+  max-width: 445px;
+
+  margin: 15px 0 0;
+
+  color: #969598;
+
+  font-family: Arial, Helvetica, sans-serif;
+
+  font-size: 14px;
+  font-weight: 400;
+
+  line-height: 1.65;
+}
+
+
+/* =========================================================
+   DIVIDER
+========================================================= */
+
+.contact-divider {
+  width: 100%;
+  height: 1px;
+
+  margin: 27px 0 29px;
+
+  background: var(--divider);
+
+  flex-shrink: 0;
+}
+
+.bottom-divider {
+  margin-top: auto;
+  margin-bottom: 38px;
+}
+
+
+/* =========================================================
+   CONTACT DETAILS
+========================================================= */
+
+.contact-details {
+  width: 100%;
+
+  display: flex;
+  flex-direction: column;
+
+  gap: 23px;
+}
+
+.contact-row {
+  width: 100%;
+
+  display: flex;
+  align-items: center;
+
+  gap: 18px;
+
+  min-width: 0;
+}
+
+
+/* =========================================================
+   ICON BOX
+========================================================= */
+
+.contact-icon-box {
+  width: 47px;
+  height: 47px;
+
+  min-width: 47px;
+
+  border: 1px solid rgba(255, 255, 255, 0.12);
+
+  border-radius: 14px;
+
+  background: #151519;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.contact-icon {
+  width: 17px;
+  height: 17px;
+
+  object-fit: contain;
+
+  display: block;
+}
+
+
+/* =========================================================
+   CONTACT ROW CONTENT
+========================================================= */
+
+.contact-row-content {
+  min-width: 0;
+
+  display: flex;
+  flex-direction: column;
+
+  justify-content: center;
+}
+
+.contact-label {
+  margin: 0;
+
+  color: #77767a;
+
+  font-family: Arial, Helvetica, sans-serif;
+
+  font-size: 11px;
+  font-weight: 500;
+
+  line-height: 1;
+
+  letter-spacing: 2px;
+
+  text-transform: uppercase;
+}
+
+.contact-value {
+  display: block;
+
+  margin-top: 7px;
+
+  font-family: Arial, Helvetica, sans-serif;
+
+  font-size: 19px;
+  font-weight: 400;
+
+  line-height: 1.25;
+
+  text-decoration: none;
+
+  word-break: normal;
+}
+
+.phone-value {
+  color: #f1eeeb;
+
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.address-value {
+  color: #b8b6b8;
+}
+
+.email-value {
+  color: var(--accent-light);
+
+  font-weight: 600;
+
+  overflow-wrap: anywhere;
+}
+
+
+/* =========================================================
+   BUTTONS
+========================================================= */
+
+.contact-actions {
+  width: 100%;
+
+  display: flex;
+  align-items: center;
+
+  gap: 18px;
+}
+
+.contact-button {
+  height: 48px;
+
+  border-radius: 30px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  gap: 10px;
+
+  text-decoration: none;
+
+  font-family: Arial, Helvetica, sans-serif;
+
+  font-size: 11px;
+  font-weight: 700;
+
+  line-height: 1;
+
+  letter-spacing: 3px;
+
+  white-space: nowrap;
+}
+
+.call-button {
+  width: 192px;
+
+  background: #e0b89e;
+
+  color: #111114;
+}
+
+.directions-button {
+  width: 220px;
+
+  background: transparent;
+
+  border: 1px solid rgba(255, 255, 255, 0.22);
+
+  color: #f2efec;
+}
+
+.button-icon {
+  width: 14px;
+  height: 14px;
+
+  object-fit: contain;
+
+  display: block;
+}
+
+
+/* =========================================================
+   1440px
+========================================================= */
+
+@media (max-width: 1440px) {
+
+  .reach-us-content {
+    width: calc(100% - 90px);
+
+    grid-template-columns:
+      minmax(0, 1.45fr)
+      minmax(430px, 1fr);
+
+    gap: 55px;
+  }
+
+  .reach-map,
+  .contact-card {
+    height: 550px;
+  }
+
+  .contact-card {
+    padding: 36px;
+  }
+}
+
+
+/* =========================================================
+   1366px
+========================================================= */
+
+@media (max-width: 1366px) {
+
+  .reach-us {
+    min-height: 820px;
+  }
+
+  .reach-us-content {
+    width: calc(100% - 70px);
+
+    margin-top: 82px;
+
+    gap: 45px;
+  }
+
+  .reach-map,
+  .contact-card {
+    height: 530px;
+  }
+
+  .reach-us-title {
+    font-size: 46px;
+  }
+
+  .reach-us-description {
+    font-size: 19px;
+  }
+
+  .contact-card {
+    padding: 34px;
+  }
+
+  .contact-card h2 {
+    font-size: 44px;
+  }
+
+  .contact-description {
+    font-size: 13px;
+  }
+
+  .contact-details {
+    gap: 20px;
+  }
+
+  .bottom-divider {
+    margin-bottom: 32px;
+  }
+}
+
+
+/* =========================================================
+   1200px
+========================================================= */
+
+@media (max-width: 1200px) {
+
+  .reach-us-content {
+    width: calc(100% - 50px);
+
+    grid-template-columns:
+      minmax(0, 1.35fr)
+      minmax(380px, 1fr);
+
+    gap: 30px;
+  }
+
+  .reach-map,
+  .contact-card {
+    height: 510px;
+  }
+
+  .contact-card {
+    padding: 30px;
+  }
+
+  .contact-card h2 {
+    font-size: 40px;
+  }
+
+  .contact-description {
+    margin-top: 13px;
+    font-size: 13px;
+  }
+
+  .contact-divider {
+    margin-top: 23px;
+    margin-bottom: 25px;
+  }
+
+  .contact-row {
+    gap: 14px;
+  }
+
+  .contact-icon-box {
+    width: 44px;
+    height: 44px;
+    min-width: 44px;
+  }
+
+  .contact-value {
+    font-size: 17px;
+  }
+
+  .phone-value {
+    font-size: 18px;
+  }
+
+  .contact-actions {
+    gap: 12px;
+  }
+
+  .call-button {
+    width: 180px;
+  }
+
+  .directions-button {
+    width: 205px;
+  }
+}
+
+
+/* =========================================================
+   1024px
+========================================================= */
+
+@media (max-width: 1024px) {
+
+  .reach-us {
+    min-height: auto;
+
+    padding-top: 65px;
+    padding-bottom: 80px;
+  }
+
+  .reach-us-eyebrow {
+    font-size: 9px;
+    letter-spacing: 3.5px;
+  }
+
+  .reach-us-title {
+    margin-top: 24px;
+
+    font-size: 42px;
+  }
+
+  .reach-us-description {
+    max-width: 680px;
+
+    margin-top: 17px;
+
+    font-size: 17px;
+  }
+
+  .reach-us-content {
+    width: calc(100% - 40px);
+
+    margin-top: 55px;
+
+    grid-template-columns:
+      minmax(0, 1.4fr)
+      minmax(330px, 1fr);
+
+    gap: 25px;
+  }
+
+  .reach-map,
+  .contact-card {
+    height: 480px;
+  }
+
+  .contact-card {
+    padding: 27px;
+  }
+
+  .contact-eyebrow {
+    font-size: 9px;
+    letter-spacing: 3px;
+  }
+
+  .contact-card h2 {
+    margin-top: 10px;
+
+    font-size: 37px;
+  }
+
+  .contact-description {
+    font-size: 12px;
+    line-height: 1.6;
+  }
+
+  .contact-divider {
+    margin: 21px 0 23px;
+  }
+
+  .contact-details {
+    gap: 17px;
+  }
+
+  .contact-row {
+    gap: 12px;
+  }
+
+  .contact-icon-box {
+    width: 42px;
+    height: 42px;
+    min-width: 42px;
+
+    border-radius: 12px;
+  }
+
+  .contact-icon {
+    width: 15px;
+    height: 15px;
+  }
+
+  .contact-label {
+    font-size: 9px;
+    letter-spacing: 1.6px;
+  }
+
+  .contact-value {
+    margin-top: 6px;
+    font-size: 15px;
+  }
+
+  .phone-value {
+    font-size: 16px;
+  }
+
+  .contact-actions {
+    gap: 10px;
+  }
+
+  .contact-button {
+    height: 44px;
+
+    gap: 7px;
+
+    font-size: 9px;
+    letter-spacing: 2px;
+  }
+
+  .call-button {
+    width: 160px;
+  }
+
+  .directions-button {
+    width: 180px;
+  }
+
+  .button-icon {
+    width: 12px;
+    height: 12px;
+  }
+
+  .bottom-divider {
+    margin-bottom: 27px;
+  }
+}
+
+
+/* =========================================================
+   768px
+========================================================= */
+
+@media (max-width: 768px) {
+
+  .reach-us {
+    padding: 55px 0 65px;
+  }
+
+  .reach-us-eyebrow {
+    padding: 0 20px;
+
+    font-size: 8px;
+    letter-spacing: 3px;
+  }
+
+  .reach-us-title {
+    margin-top: 22px;
+
+    font-size: 38px;
+  }
+
+  .reach-us-description {
+    max-width: 620px;
+
+    padding: 0 25px;
+
+    font-size: 16px;
+
+    line-height: 1.55;
+  }
+
+  .desktop-break {
+    display: none;
+  }
+
+  .reach-us-content {
+    width: calc(100% - 30px);
+    max-width: 600px;
+
+    margin-top: 42px;
+
+    display: flex;
+    flex-direction: column;
+
+    gap: 22px;
+  }
+
+  .reach-map {
+    width: 100%;
+    height: 400px;
+
+    border-radius: 17px;
+  }
+
+  .contact-card {
+    width: 100%;
+    height: auto;
+
+    min-height: 500px;
+
+    padding: 32px;
+
+    border-radius: 18px;
+  }
+
+  .contact-card h2 {
+    font-size: 38px;
+  }
+
+  .contact-description {
+    max-width: 500px;
+
+    font-size: 14px;
+  }
+
+  .contact-divider {
+    margin: 27px 0;
+  }
+
+  .contact-details {
+    gap: 22px;
+  }
+
+  .contact-icon-box {
+    width: 47px;
+    height: 47px;
+    min-width: 47px;
+  }
+
+  .contact-label {
+    font-size: 10px;
+  }
+
+  .contact-value {
+    font-size: 18px;
+  }
+
+  .phone-value {
+    font-size: 19px;
+  }
+
+  .bottom-divider {
+    margin-top: 35px;
+    margin-bottom: 28px;
+  }
+
+  .contact-actions {
+    width: 100%;
+  }
+
+  .call-button,
+  .directions-button {
+    flex: 1;
+    width: auto;
+  }
+}
+
+
+/* =========================================================
+   600px
+========================================================= */
+
+@media (max-width: 600px) {
+
+  .reach-us {
+    padding: 50px 0 55px;
+  }
+
+  .reach-us-eyebrow {
+    font-size: 7.5px;
+    letter-spacing: 2.5px;
+  }
+
+  .reach-us-title {
+    margin-top: 20px;
+
+    font-size: 36px;
+  }
+
+  .reach-us-description {
+    margin-top: 18px;
+
+    padding: 0 22px;
+
+    font-size: 15px;
+  }
+
+  .reach-us-content {
+    width: calc(100% - 30px);
+
+    margin-top: 36px;
+
+    gap: 18px;
+  }
+
+  .reach-map {
+    height: 350px;
+
+    border-radius: 16px;
+  }
+
+  .contact-card {
+    min-height: auto;
+
+    padding: 28px;
+
+    border-radius: 17px;
+  }
+
+  .contact-eyebrow {
+    font-size: 9px;
+    letter-spacing: 3px;
+  }
+
+  .contact-card h2 {
+    margin-top: 11px;
+
+    font-size: 36px;
+  }
+
+  .contact-description {
+    margin-top: 14px;
+
+    font-size: 13px;
+    line-height: 1.6;
+  }
+
+  .contact-divider {
+    margin: 24px 0;
+  }
+
+  .contact-details {
+    gap: 20px;
+  }
+
+  .contact-row {
+    gap: 14px;
+  }
+
+  .contact-icon-box {
+    width: 45px;
+    height: 45px;
+    min-width: 45px;
+
+    border-radius: 13px;
+  }
+
+  .contact-icon {
+    width: 16px;
+    height: 16px;
+  }
+
+  .contact-label {
+    font-size: 9px;
+    letter-spacing: 1.8px;
+  }
+
+  .contact-value {
+    margin-top: 6px;
+
+    font-size: 16px;
+
+    line-height: 1.35;
+  }
+
+  .phone-value {
+    font-size: 18px;
+  }
+
+  .bottom-divider {
+    margin-top: 28px;
+    margin-bottom: 25px;
+  }
+
+  .contact-actions {
+    gap: 10px;
+  }
+
+  .contact-button {
+    height: 46px;
+
+    font-size: 9px;
+    letter-spacing: 2px;
+  }
+}
+
+
+/* =========================================================
+   480px
+========================================================= */
+
+@media (max-width: 480px) {
+
+  .reach-us {
+    padding: 45px 0 50px;
+  }
+
+  .reach-us-eyebrow {
+    padding: 0 15px;
+
+    font-size: 7px;
+    letter-spacing: 2.1px;
+  }
+
+  .reach-us-title {
+    margin-top: 20px;
+
+    font-size: 32px;
+  }
+
+  .reach-us-description {
+    padding: 0 20px;
+
+    font-size: 14px;
+    line-height: 1.55;
+  }
+
+  .reach-us-content {
+    width: calc(100% - 30px);
+
+    margin-top: 32px;
+  }
+
+  .reach-map {
+    height: 300px;
+
+    border-radius: 15px;
+  }
+
+  .contact-card {
+    padding: 24px;
+
+    border-radius: 16px;
+  }
+
+  .contact-eyebrow {
+    font-size: 8px;
+    letter-spacing: 2.5px;
+  }
+
+  .contact-card h2 {
+    font-size: 32px;
+  }
+
+  .contact-description {
+    font-size: 12.5px;
+  }
+
+  .contact-divider {
+    margin: 22px 0;
+  }
+
+  .contact-details {
+    gap: 18px;
+  }
+
+  .contact-icon-box {
+    width: 43px;
+    height: 43px;
+    min-width: 43px;
+  }
+
+  .contact-label {
+    font-size: 8px;
+    letter-spacing: 1.5px;
+  }
+
+  .contact-value {
+    font-size: 15px;
+  }
+
+  .phone-value {
+    font-size: 16px;
+  }
+
+  .bottom-divider {
+    margin-top: 25px;
+    margin-bottom: 23px;
+  }
+
+  .contact-actions {
+    flex-direction: column;
+
+    width: 100%;
+  }
+
+  .call-button,
+  .directions-button {
+    width: 100%;
+    flex: none;
+  }
+}
+
+
+/* =========================================================
+   390px
+========================================================= */
+
+@media (max-width: 390px) {
+
+  .reach-us {
+    padding: 42px 0 45px;
+  }
+
+  .reach-us-eyebrow {
+    font-size: 6.5px;
+    letter-spacing: 1.8px;
+  }
+
+  .reach-us-title {
+    font-size: 29px;
+  }
+
+  .reach-us-description {
+    padding: 0 18px;
+
+    font-size: 13px;
+  }
+
+  .reach-us-content {
+    width: calc(100% - 30px);
+
+    margin-top: 28px;
+
+    gap: 15px;
+  }
+
+  .reach-map {
+    height: 270px;
+  }
+
+  .contact-card {
+    padding: 21px;
+  }
+
+  .contact-eyebrow {
+    font-size: 7.5px;
+    letter-spacing: 2.1px;
+  }
+
+  .contact-card h2 {
+    font-size: 29px;
+  }
+
+  .contact-description {
+    font-size: 12px;
+  }
+
+  .contact-divider {
+    margin: 20px 0;
+  }
+
+  .contact-details {
+    gap: 17px;
+  }
+
+  .contact-row {
+    gap: 12px;
+  }
+
+  .contact-icon-box {
+    width: 41px;
+    height: 41px;
+    min-width: 41px;
+
+    border-radius: 12px;
+  }
+
+  .contact-icon {
+    width: 15px;
+    height: 15px;
+  }
+
+  .contact-label {
+    font-size: 7.5px;
+    letter-spacing: 1.3px;
+  }
+
+  .contact-value {
+    font-size: 14px;
+  }
+
+  .phone-value {
+    font-size: 15px;
+  }
+
+  .bottom-divider {
+    margin-top: 22px;
+    margin-bottom: 20px;
+  }
+
+  .contact-button {
+    height: 44px;
+
+    font-size: 8px;
+    letter-spacing: 1.8px;
+  }
+}
+
+
+/* =========================================================
+   320px
+========================================================= */
+
+@media (max-width: 320px) {
+
+  .reach-us {
+    padding: 38px 0 40px;
+  }
+
+  .reach-us-eyebrow {
+    font-size: 6px;
+    letter-spacing: 1.5px;
+  }
+
+  .reach-us-title {
+    margin-top: 18px;
+
+    font-size: 28px;
+  }
+
+  .reach-us-description {
+    padding: 0 16px;
+
+    font-size: 12px;
+  }
+
+  .reach-us-content {
+    width: calc(100% - 30px);
+
+    margin-top: 25px;
+  }
+
+  .reach-map {
+    height: 240px;
+
+    border-radius: 14px;
+  }
+
+  .contact-card {
+    padding: 20px;
+
+    border-radius: 15px;
+  }
+
+  .contact-eyebrow {
+    font-size: 7px;
+    letter-spacing: 1.8px;
+  }
+
+  .contact-card h2 {
+    margin-top: 9px;
+
+    font-size: 29px;
+  }
+
+  .contact-description {
+    margin-top: 12px;
+
+    font-size: 11.5px;
+    line-height: 1.55;
+  }
+
+  .contact-divider {
+    margin: 18px 0;
+  }
+
+  .contact-details {
+    gap: 16px;
+  }
+
+  .contact-row {
+    gap: 10px;
+  }
+
+  .contact-icon-box {
+    width: 39px;
+    height: 39px;
+    min-width: 39px;
+
+    border-radius: 11px;
+  }
+
+  .contact-icon {
+    width: 14px;
+    height: 14px;
+  }
+
+  .contact-label {
+    font-size: 7px;
+    letter-spacing: 1.1px;
+  }
+
+  .contact-value {
+    margin-top: 5px;
+
+    font-size: 13px;
+  }
+
+  .phone-value {
+    font-size: 14px;
+  }
+
+  .bottom-divider {
+    margin-top: 20px;
+    margin-bottom: 19px;
+  }
+
+  .contact-button {
+    width: 100%;
+    height: 43px;
+
+    font-size: 7.5px;
+    letter-spacing: 1.5px;
+  }
+
+  .button-icon {
+    width: 11px;
+    height: 11px;
+  }
+}
+
+
+
+
+/* =========================================================
+   REACH US SCROLL REVEAL ANIMATION
+========================================================= */
+
+/* =========================================================
+   HEADER INITIAL STATE
+========================================================= */
+
+.reach-us-eyebrow,
+.reach-us-title,
+.reach-us-description {
+  opacity: 0;
+  transform: translateY(35px);
+
+  transition:
+    opacity 0.8s ease,
+    transform 0.8s cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+
+/* =========================================================
+   MAP INITIAL STATE
+========================================================= */
+
+.reach-map {
+  opacity: 0;
+  transform: translateX(-60px) scale(0.97);
+
+  transition:
+    opacity 0.9s ease,
+    transform 0.95s cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+
+/* =========================================================
+   CONTACT CARD INITIAL STATE
+========================================================= */
+
+.contact-card {
+  opacity: 0;
+  transform: translateX(60px) scale(0.97);
+
+  transition:
+    opacity 0.9s ease,
+    transform 0.95s cubic-bezier(0.22, 1, 0.36, 1),
+    border-color 0.4s ease,
+    box-shadow 0.4s ease;
+}
+
+
+/* =========================================================
+   HEADER VISIBLE
+========================================================= */
+
+.reach-us.reach-visible
+.reach-us-eyebrow {
+  opacity: 1;
+  transform: translateY(0);
+
+  transition-delay: 0.05s;
+}
+
+
+.reach-us.reach-visible
+.reach-us-title {
+  opacity: 1;
+  transform: translateY(0);
+
+  transition-delay: 0.18s;
+}
+
+
+.reach-us.reach-visible
+.reach-us-description {
+  opacity: 1;
+  transform: translateY(0);
+
+  transition-delay: 0.32s;
+}
+
+
+/* =========================================================
+   MAP + CARD REVEAL
+========================================================= */
+
+.reach-us.reach-visible
+.reach-map {
+  opacity: 1;
+  transform: translateX(0) scale(1);
+
+  transition-delay: 0.48s;
+}
+
+
+.reach-us.reach-visible
+.contact-card {
+  opacity: 1;
+  transform: translateX(0) scale(1);
+
+  transition-delay: 0.62s;
+}
+
+
+/* =========================================================
+   CONTACT CARD INNER ANIMATION
+========================================================= */
+
+.contact-card-header {
+  opacity: 0;
+  transform: translateY(25px);
+
+  transition:
+    opacity 0.7s ease,
+    transform 0.7s cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+
+.contact-divider {
+  transform: scaleX(0);
+  transform-origin: left center;
+
+  transition:
+    transform 0.7s cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+
+.contact-row {
+  opacity: 0;
+  transform: translateY(20px);
+
+  transition:
+    opacity 0.65s ease,
+    transform 0.65s cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+
+.contact-icon-box {
+  transition:
+    transform 0.6s cubic-bezier(0.22, 1, 0.36, 1),
+    border-color 0.3s ease;
+}
+
+
+.contact-actions {
+  opacity: 0;
+  transform: translateY(20px);
+
+  transition:
+    opacity 0.7s ease,
+    transform 0.7s cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+
+/* =========================================================
+   INNER VISIBLE STATE
+========================================================= */
+
+.reach-us.reach-visible
+.contact-card-header {
+  opacity: 1;
+  transform: translateY(0);
+
+  transition-delay: 0.78s;
+}
+
+
+/* First divider */
+.reach-us.reach-visible
+.contact-card-header + .contact-divider {
+  transform: scaleX(1);
+
+  transition-delay: 0.88s;
+}
+
+
+/* Contact rows */
+.reach-us.reach-visible
+.contact-row:nth-child(1) {
+  opacity: 1;
+  transform: translateY(0);
+
+  transition-delay: 0.96s;
+}
+
+
+.reach-us.reach-visible
+.contact-row:nth-child(2) {
+  opacity: 1;
+  transform: translateY(0);
+
+  transition-delay: 1.08s;
+}
+
+
+.reach-us.reach-visible
+.contact-row:nth-child(3) {
+  opacity: 1;
+  transform: translateY(0);
+
+  transition-delay: 1.20s;
+}
+
+
+/* Bottom divider */
+.reach-us.reach-visible
+.bottom-divider {
+  transform: scaleX(1);
+
+  transition-delay: 1.32s;
+}
+
+
+/* Buttons */
+.reach-us.reach-visible
+.contact-actions {
+  opacity: 1;
+  transform: translateY(0);
+
+  transition-delay: 1.42s;
+}
+
+
+/* =========================================================
+   ICON HOVER
+========================================================= */
+
+.contact-row:hover .contact-icon-box {
+  transform: translateY(-3px);
+
+  border-color: rgba(216, 181, 156, 0.4);
+}
+
+
+/* =========================================================
+   BUTTON HOVER
+========================================================= */
+
+.contact-button {
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease,
+    background 0.3s ease,
+    border-color 0.3s ease;
+}
+
+
+.call-button:hover {
+  transform: translateY(-3px);
+
+  box-shadow:
+    0 8px 25px rgba(216, 181, 156, 0.18);
+}
+
+
+.directions-button:hover {
+  transform: translateY(-3px);
+
+  border-color: rgba(216, 181, 156, 0.5);
+}
+
+
+/* =========================================================
+   MAP HOVER
+========================================================= */
+
+.reach-map-image {
+  transition:
+    transform 1.2s cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+
+.reach-map:hover .reach-map-image {
+  transform: scale(1.025);
+}
+
+
+/* =========================================================
+   MOBILE ANIMATION
+========================================================= */
+
+@media (max-width: 768px) {
+
+  .reach-us-eyebrow,
+  .reach-us-title,
+  .reach-us-description {
+    transform: translateY(25px);
+  }
+
+  .reach-map {
+    transform: translateY(45px) scale(0.97);
+  }
+
+  .contact-card {
+    transform: translateY(45px) scale(0.97);
+  }
+
+  .reach-us.reach-visible
+  .reach-map {
+    transform: translateY(0) scale(1);
+    transition-delay: 0.42s;
+  }
+
+  .reach-us.reach-visible
+  .contact-card {
+    transform: translateY(0) scale(1);
+    transition-delay: 0.58s;
+  }
+
+  .contact-card-header {
+    transform: translateY(20px);
+  }
+
+  .contact-row {
+    transform: translateY(15px);
+  }
+
+  .contact-actions {
+    transform: translateY(15px);
+  }
+}
+
+
+/* =========================================================
+   REDUCED MOTION
+========================================================= */
+
+@media (prefers-reduced-motion: reduce) {
+
+  .reach-us-eyebrow,
+  .reach-us-title,
+  .reach-us-description,
+  .reach-map,
+  .contact-card,
+  .contact-card-header,
+  .contact-row,
+  .contact-actions {
+    opacity: 1;
+    transform: none;
+    transition: none;
+  }
+
+  .contact-divider {
+    transform: scaleX(1);
+    transition: none;
+  }
+
+  .reach-map-image {
+    transition: none;
+  }
+}

@@ -1,0 +1,1201 @@
+/* =========================================================
+   SERVICES SECTION
+========================================================= */
+
+.services-section {
+  --bg: #08090b;
+  --card-bg: #111214;
+  --border: #24272a;
+  --image-border: #252729;
+
+  --white: #f1efed;
+  --muted: #77787b;
+  --soft-muted: #929296;
+  --gold: #c7a78f;
+
+  width: 100%;
+  min-height: 650px;
+
+  background: var(--bg);
+
+  color: var(--white);
+
+  overflow: hidden;
+
+  box-sizing: border-box;
+}
+
+.services-section *,
+.services-section *::before,
+.services-section *::after {
+  box-sizing: border-box;
+}
+
+
+/* =========================================================
+   MAIN CONTAINER
+========================================================= */
+
+.services-container {
+  width: calc(100% - 160px);
+  max-width: 1334px;
+
+  margin: 0 auto;
+
+  padding: 63px 0 90px;
+}
+
+
+/* =========================================================
+   HEADER
+========================================================= */
+
+.services-header {
+  width: 100%;
+
+  display: grid;
+
+  grid-template-columns: 1fr 1fr;
+
+  column-gap: 70px;
+
+  align-items: start;
+}
+
+
+/* =========================================================
+   LEFT HEADER
+========================================================= */
+
+.services-heading-wrapper {
+  min-width: 0;
+}
+
+
+.services-label {
+  display: block;
+
+  margin-bottom: 9px;
+
+  color: var(--gold);
+
+  font-family: Arial, Helvetica, sans-serif;
+
+  font-size: 9px;
+
+  font-weight: 500;
+
+  line-height: 1;
+
+  letter-spacing: 3.3px;
+}
+
+
+.services-title {
+  margin: 0;
+
+  color: #f3f0ee;
+
+  font-family:
+    Georgia,
+    "Times New Roman",
+    serif;
+
+  font-size: 32px;
+
+  font-weight: 400;
+
+  line-height: 1.15;
+
+  letter-spacing: -0.5px;
+}
+
+
+/* =========================================================
+   HEADER DESCRIPTION
+========================================================= */
+
+.services-intro {
+  margin: 11px 0 0;
+
+  color: #77787b;
+
+  font-family:
+    Arial,
+    Helvetica,
+    sans-serif;
+
+  font-size: 13px;
+
+  font-weight: 400;
+
+  line-height: 1.55;
+}
+
+
+/* =========================================================
+   CARDS GRID
+========================================================= */
+
+.services-grid {
+  width: 100%;
+
+  margin-top: 98px;
+
+  display: grid;
+
+  grid-template-columns:
+    repeat(4, minmax(0, 1fr));
+
+  gap: 20px;
+}
+
+
+/* =========================================================
+   SERVICE CARD
+========================================================= */
+
+.service-card {
+  position: relative;
+
+  min-width: 0;
+
+  height: 327px;
+
+  padding: 17px;
+
+  background:
+    linear-gradient(
+      145deg,
+      #121315 0%,
+      #111214 100%
+    );
+
+  border:
+    1px solid
+    var(--border);
+
+  border-radius: 13px;
+
+  overflow: hidden;
+
+  box-shadow:
+    0 18px 35px rgba(0, 0, 0, 0.20);
+
+  transition:
+    transform 0.25s ease,
+    border-color 0.25s ease;
+}
+
+
+.service-card:hover {
+  transform: translateY(-3px);
+
+  border-color: #34373a;
+}
+
+
+/* =========================================================
+   IMAGE
+========================================================= */
+
+.service-image-wrapper {
+  position: relative;
+
+  width: 100%;
+
+  height: 148px;
+
+  overflow: hidden;
+
+  border-radius: 9px;
+
+  background: #17181a;
+
+  border:
+    1px solid
+    var(--image-border);
+}
+
+
+.service-image {
+  width: 100%;
+  height: 100%;
+
+  display: block;
+
+  object-fit: cover;
+
+  object-position: center;
+}
+
+
+/* =========================================================
+   IMAGE LABEL
+========================================================= */
+
+.service-image-label {
+  position: absolute;
+
+  top: 8px;
+  left: 8px;
+
+  height: 17px;
+
+  padding: 0 7px;
+
+  display: flex;
+
+  align-items: center;
+
+  background:
+    rgba(9, 8, 7, 0.78);
+
+  border:
+    1px solid
+    rgba(198, 165, 139, 0.24);
+
+  border-radius: 4px;
+
+  color: #c9b29f;
+
+  font-family:
+    Arial,
+    Helvetica,
+    sans-serif;
+
+  font-size: 7px;
+
+  font-weight: 500;
+
+  line-height: 1;
+
+  letter-spacing: 1px;
+
+  white-space: nowrap;
+}
+
+
+/* =========================================================
+   CARD CONTENT
+========================================================= */
+
+.service-card-content {
+  padding-top: 14px;
+}
+
+
+/* =========================================================
+   CARD EYEBROW
+========================================================= */
+
+.service-card-eyebrow {
+  min-height: 23px;
+
+  color: #c4a28a;
+
+  font-family:
+    Arial,
+    Helvetica,
+    sans-serif;
+
+  font-size: 8px;
+
+  font-weight: 500;
+
+  line-height: 1.45;
+
+  letter-spacing: 1.8px;
+
+  text-transform: uppercase;
+}
+
+
+/* =========================================================
+   CARD TITLE
+========================================================= */
+
+.service-card-title {
+  margin: 5px 0 0;
+
+  color: #efedeb;
+
+  font-family:
+    Georgia,
+    "Times New Roman",
+    serif;
+
+  font-size: 16px;
+
+  font-weight: 400;
+
+  line-height: 1.25;
+
+  letter-spacing: -0.1px;
+}
+
+
+/* =========================================================
+   CARD DESCRIPTION
+========================================================= */
+
+.service-card-description {
+  margin: 9px 0 0;
+
+  color: #707174;
+
+  font-family:
+    Arial,
+    Helvetica,
+    sans-serif;
+
+  font-size: 10.5px;
+
+  font-weight: 400;
+
+  line-height: 1.55;
+}
+
+
+/* =========================================================
+   1440px
+========================================================= */
+
+@media (max-width: 1440px) {
+
+  .services-container {
+    width: calc(100% - 140px);
+  }
+
+  .services-grid {
+    gap: 19px;
+  }
+
+  .service-card {
+    padding: 17px;
+  }
+}
+
+
+/* =========================================================
+   1366px
+========================================================= */
+
+@media (max-width: 1366px) {
+
+  .services-container {
+    width: calc(100% - 120px);
+
+    padding-top: 60px;
+  }
+
+  .services-header {
+    column-gap: 55px;
+  }
+
+  .services-title {
+    font-size: 30px;
+  }
+
+  .services-grid {
+    margin-top: 90px;
+
+    gap: 18px;
+  }
+
+  .service-card {
+    height: 325px;
+
+    padding: 16px;
+  }
+
+  .service-image-wrapper {
+    height: 146px;
+  }
+}
+
+
+/* =========================================================
+   1200px
+========================================================= */
+
+@media (max-width: 1200px) {
+
+  .services-container {
+    width: calc(100% - 90px);
+  }
+
+  .services-grid {
+    grid-template-columns:
+      repeat(2, minmax(0, 1fr));
+
+    gap: 22px;
+  }
+
+  .service-card {
+    height: 350px;
+  }
+
+  .service-image-wrapper {
+    height: 170px;
+  }
+
+  .service-card-description {
+    font-size: 11px;
+  }
+}
+
+
+/* =========================================================
+   1024px
+========================================================= */
+
+@media (max-width: 1024px) {
+
+  .services-container {
+    width: calc(100% - 60px);
+
+    padding:
+      55px
+      0
+      75px;
+  }
+
+  .services-header {
+    grid-template-columns:
+      1fr;
+
+    row-gap: 17px;
+  }
+
+  .services-intro {
+    margin-top: 0;
+  }
+
+  .services-grid {
+    margin-top: 65px;
+
+    grid-template-columns:
+      repeat(2, minmax(0, 1fr));
+
+    gap: 20px;
+  }
+
+  .service-card {
+    height: 345px;
+  }
+
+  .service-image-wrapper {
+    height: 165px;
+  }
+}
+
+
+/* =========================================================
+   TABLET - 768px
+========================================================= */
+
+@media (max-width: 768px) {
+
+  .services-container {
+    width: calc(100% - 40px);
+
+    padding:
+      50px
+      0
+      65px;
+  }
+
+  .services-title {
+    font-size: 29px;
+  }
+
+  .services-grid {
+    margin-top: 50px;
+
+    gap: 18px;
+  }
+
+  .service-card {
+    height: 340px;
+
+    padding: 14px;
+
+    border-radius: 12px;
+  }
+
+  .service-image-wrapper {
+    height: 155px;
+  }
+
+  .service-card-content {
+    padding-top: 12px;
+  }
+
+  .service-card-title {
+    font-size: 15px;
+  }
+
+  .service-card-description {
+    font-size: 10px;
+  }
+}
+
+
+/* =========================================================
+   MOBILE - 600px
+========================================================= */
+
+@media (max-width: 600px) {
+
+  .services-container {
+    width: calc(100% - 32px);
+
+    padding:
+      45px
+      0
+      55px;
+  }
+
+  .services-label {
+    font-size: 8px;
+
+    letter-spacing: 2.8px;
+  }
+
+  .services-title {
+    font-size: 27px;
+
+    line-height: 1.2;
+  }
+
+  .services-intro {
+    font-size: 12px;
+
+    line-height: 1.55;
+  }
+
+  .desktop-only {
+    display: none;
+  }
+
+  .services-grid {
+    margin-top: 40px;
+
+    grid-template-columns: 1fr;
+
+    gap: 18px;
+  }
+
+  .service-card {
+    width: 100%;
+
+    height: auto;
+
+    min-height: 355px;
+
+    padding: 15px;
+  }
+
+  .service-image-wrapper {
+    height: 180px;
+  }
+
+  .service-card-eyebrow {
+    font-size: 8px;
+  }
+
+  .service-card-title {
+    font-size: 17px;
+  }
+
+  .service-card-description {
+    font-size: 11px;
+
+    line-height: 1.6;
+  }
+}
+
+
+/* =========================================================
+   MOBILE - 480px
+========================================================= */
+
+@media (max-width: 480px) {
+
+  .services-container {
+    width: calc(100% - 28px);
+
+    padding-top: 38px;
+  }
+
+  .services-title {
+    font-size: 25px;
+  }
+
+  .services-intro {
+    font-size: 11px;
+  }
+
+  .services-grid {
+    margin-top: 35px;
+
+    gap: 16px;
+  }
+
+  .service-card {
+    min-height: 340px;
+
+    padding: 13px;
+
+    border-radius: 11px;
+  }
+
+  .service-image-wrapper {
+    height: 165px;
+  }
+
+  .service-image-label {
+    top: 7px;
+    left: 7px;
+
+    font-size: 6.5px;
+  }
+
+  .service-card-content {
+    padding-top: 12px;
+  }
+
+  .service-card-eyebrow {
+    font-size: 7px;
+
+    letter-spacing: 1.5px;
+  }
+
+  .service-card-title {
+    margin-top: 4px;
+
+    font-size: 16px;
+  }
+
+  .service-card-description {
+    margin-top: 8px;
+
+    font-size: 10px;
+  }
+}
+
+
+/* =========================================================
+   MOBILE - 390px
+========================================================= */
+
+@media (max-width: 390px) {
+
+  .services-container {
+    width: calc(100% - 24px);
+  }
+
+  .services-title {
+    font-size: 23px;
+  }
+
+  .services-intro {
+    font-size: 10.5px;
+  }
+
+  .service-card {
+    min-height: 325px;
+
+    padding: 12px;
+  }
+
+  .service-image-wrapper {
+    height: 150px;
+  }
+
+  .service-card-eyebrow {
+    font-size: 6.5px;
+
+    letter-spacing: 1.3px;
+  }
+
+  .service-card-title {
+    font-size: 15px;
+  }
+
+  .service-card-description {
+    font-size: 9.5px;
+  }
+}
+
+
+/* =========================================================
+   MOBILE - 320px
+========================================================= */
+
+@media (max-width: 320px) {
+
+  .services-container {
+    width: calc(100% - 20px);
+
+    padding-top: 32px;
+  }
+
+  .services-label {
+    font-size: 7px;
+
+    letter-spacing: 2.2px;
+  }
+
+  .services-title {
+    font-size: 21px;
+  }
+
+  .services-intro {
+    font-size: 9.5px;
+  }
+
+  .services-grid {
+    margin-top: 30px;
+  }
+
+  .service-card {
+    min-height: 305px;
+
+    padding: 10px;
+  }
+
+  .service-image-wrapper {
+    height: 135px;
+  }
+
+  .service-card-eyebrow {
+    font-size: 6px;
+
+    letter-spacing: 1.1px;
+  }
+
+  .service-card-title {
+    font-size: 14px;
+  }
+
+  .service-card-description {
+    font-size: 9px;
+
+    line-height: 1.5;
+  }
+}
+
+
+
+
+/* =========================================================
+   SERVICES SCROLL REVEAL ANIMATION
+========================================================= */
+
+
+/* =========================================================
+   INITIAL STATE
+========================================================= */
+
+.services-section .services-label,
+.services-section .services-title,
+.services-section .services-intro,
+.services-section .service-card {
+  opacity: 0;
+}
+
+
+/* =========================================================
+   HEADER ANIMATION
+========================================================= */
+
+.services-section .services-label {
+  transform: translateY(30px);
+
+  transition:
+    opacity 0.8s ease,
+    transform 0.8s cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+
+.services-section .services-title {
+  transform: translateY(45px);
+
+  transition:
+    opacity 0.9s ease,
+    transform 0.9s cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+
+.services-section .services-intro {
+  transform: translateY(35px);
+
+  transition:
+    opacity 0.9s ease,
+    transform 0.9s cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+
+/* =========================================================
+   CARD INITIAL STATE
+========================================================= */
+
+.services-section .service-card {
+  transform: translateY(70px) scale(0.96);
+
+  transition:
+    opacity 0.9s ease,
+    transform 1s cubic-bezier(0.22, 1, 0.36, 1),
+    border-color 0.25s ease;
+}
+
+
+/* =========================================================
+   IMAGE INITIAL STATE
+========================================================= */
+
+.services-section .service-image {
+  transform: scale(1.12);
+
+  transition:
+    transform 1.4s cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+
+/* =========================================================
+   CARD CONTENT INITIAL STATE
+========================================================= */
+
+.services-section .service-image-label,
+.services-section .service-card-eyebrow,
+.services-section .service-card-title,
+.services-section .service-card-description {
+  opacity: 0;
+
+  transform: translateY(20px);
+
+  transition:
+    opacity 0.7s ease,
+    transform 0.7s cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+
+/* =========================================================
+   VISIBLE STATE - HEADER
+========================================================= */
+
+.services-section.services-visible .services-label {
+  opacity: 1;
+  transform: translateY(0);
+
+  transition-delay: 0.05s;
+}
+
+
+.services-section.services-visible .services-title {
+  opacity: 1;
+  transform: translateY(0);
+
+  transition-delay: 0.18s;
+}
+
+
+.services-section.services-visible .services-intro {
+  opacity: 1;
+  transform: translateY(0);
+
+  transition-delay: 0.32s;
+}
+
+
+/* =========================================================
+   VISIBLE STATE - CARDS
+========================================================= */
+
+.services-section.services-visible .service-card {
+  opacity: 1;
+
+  transform:
+    translateY(0)
+    scale(1);
+}
+
+
+/* CARD 1 */
+
+.services-section.services-visible
+.service-card:nth-child(1) {
+  transition-delay: 0.40s;
+}
+
+
+/* CARD 2 */
+
+.services-section.services-visible
+.service-card:nth-child(2) {
+  transition-delay: 0.55s;
+}
+
+
+/* CARD 3 */
+
+.services-section.services-visible
+.service-card:nth-child(3) {
+  transition-delay: 0.70s;
+}
+
+
+/* CARD 4 */
+
+.services-section.services-visible
+.service-card:nth-child(4) {
+  transition-delay: 0.85s;
+}
+
+
+/* =========================================================
+   IMAGE REVEAL
+========================================================= */
+
+.services-section.services-visible
+.service-image {
+  transform: scale(1);
+}
+
+
+/* =========================================================
+   IMAGE LABEL
+========================================================= */
+
+.services-section.services-visible
+.service-card:nth-child(1)
+.service-image-label {
+  opacity: 1;
+  transform: translateY(0);
+
+  transition-delay: 0.75s;
+}
+
+
+.services-section.services-visible
+.service-card:nth-child(2)
+.service-image-label {
+  opacity: 1;
+  transform: translateY(0);
+
+  transition-delay: 0.90s;
+}
+
+
+.services-section.services-visible
+.service-card:nth-child(3)
+.service-image-label {
+  opacity: 1;
+  transform: translateY(0);
+
+  transition-delay: 1.05s;
+}
+
+
+.services-section.services-visible
+.service-card:nth-child(4)
+.service-image-label {
+  opacity: 1;
+  transform: translateY(0);
+
+  transition-delay: 1.20s;
+}
+
+
+/* =========================================================
+   CARD CONTENT REVEAL
+========================================================= */
+
+.services-section.services-visible
+.service-card:nth-child(1)
+.service-card-eyebrow,
+.services-section.services-visible
+.service-card:nth-child(1)
+.service-card-title,
+.services-section.services-visible
+.service-card:nth-child(1)
+.service-card-description,
+
+.services-section.services-visible
+.service-card:nth-child(2)
+.service-card-eyebrow,
+.services-section.services-visible
+.service-card:nth-child(2)
+.service-card-title,
+.services-section.services-visible
+.service-card:nth-child(2)
+.service-card-description,
+
+.services-section.services-visible
+.service-card:nth-child(3)
+.service-card-eyebrow,
+.services-section.services-visible
+.service-card:nth-child(3)
+.service-card-title,
+.services-section.services-visible
+.service-card:nth-child(3)
+.service-card-description,
+
+.services-section.services-visible
+.service-card:nth-child(4)
+.service-card-eyebrow,
+.services-section.services-visible
+.service-card:nth-child(4)
+.service-card-title,
+.services-section.services-visible
+.service-card:nth-child(4)
+.service-card-description {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+
+/* =========================================================
+   CONTENT STAGGER
+========================================================= */
+
+
+/* CARD 1 */
+
+.services-section.services-visible
+.service-card:nth-child(1)
+.service-card-eyebrow {
+  transition-delay: 0.72s;
+}
+
+.services-section.services-visible
+.service-card:nth-child(1)
+.service-card-title {
+  transition-delay: 0.80s;
+}
+
+.services-section.services-visible
+.service-card:nth-child(1)
+.service-card-description {
+  transition-delay: 0.88s;
+}
+
+
+/* CARD 2 */
+
+.services-section.services-visible
+.service-card:nth-child(2)
+.service-card-eyebrow {
+  transition-delay: 0.87s;
+}
+
+.services-section.services-visible
+.service-card:nth-child(2)
+.service-card-title {
+  transition-delay: 0.95s;
+}
+
+.services-section.services-visible
+.service-card:nth-child(2)
+.service-card-description {
+  transition-delay: 1.03s;
+}
+
+
+/* CARD 3 */
+
+.services-section.services-visible
+.service-card:nth-child(3)
+.service-card-eyebrow {
+  transition-delay: 1.02s;
+}
+
+.services-section.services-visible
+.service-card:nth-child(3)
+.service-card-title {
+  transition-delay: 1.10s;
+}
+
+.services-section.services-visible
+.service-card:nth-child(3)
+.service-card-description {
+  transition-delay: 1.18s;
+}
+
+
+/* CARD 4 */
+
+.services-section.services-visible
+.service-card:nth-child(4)
+.service-card-eyebrow {
+  transition-delay: 1.17s;
+}
+
+.services-section.services-visible
+.service-card:nth-child(4)
+.service-card-title {
+  transition-delay: 1.25s;
+}
+
+.services-section.services-visible
+.service-card:nth-child(4)
+.service-card-description {
+  transition-delay: 1.33s;
+}
+
+
+/* =========================================================
+   CARD HOVER
+========================================================= */
+
+.service-card:hover .service-image {
+  transform: scale(1.05);
+}
+
+
+/* =========================================================
+   MOBILE
+========================================================= */
+
+@media (max-width: 768px) {
+
+  .services-section .service-card {
+    transform:
+      translateY(50px)
+      scale(0.97);
+  }
+
+  .services-section .services-title {
+    transform: translateY(35px);
+  }
+
+  .services-section .services-intro {
+    transform: translateY(30px);
+  }
+
+}
+
+
+/* =========================================================
+   REDUCED MOTION
+========================================================= */
+
+@media (prefers-reduced-motion: reduce) {
+
+  .services-section .services-label,
+  .services-section .services-title,
+  .services-section .services-intro,
+  .services-section .service-card,
+  .services-section .service-image,
+  .services-section .service-image-label,
+  .services-section .service-card-eyebrow,
+  .services-section .service-card-title,
+  .services-section .service-card-description {
+    opacity: 1;
+    transform: none;
+    transition: none;
+  }
+
+}

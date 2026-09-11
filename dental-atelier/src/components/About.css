@@ -1,0 +1,1596 @@
+/* =========================================================
+   ABOUT US
+========================================================= */
+
+.about-us {
+  --about-bg: #080a0b;
+  --text-primary: #f4f1ed;
+  --text-secondary: #a4a4a4;
+  --text-muted: #737477;
+  --accent: #c9a58e;
+  --border: rgba(255, 255, 255, 0.20);
+  --card-bg: #111214;
+
+  width: 100%;
+  min-height: 860px;
+
+  background: var(--about-bg);
+
+  overflow: hidden;
+
+  box-sizing: border-box;
+}
+
+.about-us *,
+.about-us *::before,
+.about-us *::after {
+  box-sizing: border-box;
+}
+
+
+/* =========================================================
+   MAIN CONTAINER
+========================================================= */
+
+.about-us-container {
+  width: min(100% - 22%, 1390px);
+  min-height: 860px;
+
+  margin: 0 auto;
+
+  display: grid;
+
+  grid-template-columns:
+    minmax(0, 1fr)
+    555px;
+
+  column-gap: 100px;
+
+  align-items: start;
+}
+
+
+/* =========================================================
+   LEFT CONTENT
+========================================================= */
+
+.about-us-content {
+  width: 100%;
+  max-width: 650px;
+
+  padding-top: 87px;
+}
+
+
+/* =========================================================
+   EYEBROW
+========================================================= */
+
+.about-eyebrow {
+  display: block;
+
+  margin: 0 0 41px;
+
+  color: var(--accent);
+
+  font-family: Arial, Helvetica, sans-serif;
+
+  font-size: 15px;
+  font-weight: 500;
+
+  line-height: 1;
+
+  letter-spacing: 6px;
+
+  text-transform: uppercase;
+}
+
+
+/* =========================================================
+   MAIN TITLE
+========================================================= */
+
+.about-title {
+  margin: 0;
+
+  max-width: 650px;
+
+  color: var(--text-primary);
+
+  font-family:
+    Georgia,
+    "Times New Roman",
+    serif;
+
+  font-size: 51px;
+  font-weight: 400;
+
+  line-height: 1.05;
+
+  letter-spacing: -1.5px;
+}
+
+
+/* =========================================================
+   TITLE LINE ANIMATION WRAPPER
+========================================================= */
+
+.about-title-line {
+  display: block;
+
+  overflow: hidden;
+}
+
+.about-title-inner {
+  display: block;
+}
+
+
+/* =========================================================
+   DESCRIPTION
+========================================================= */
+
+.about-description {
+  max-width: 610px;
+
+  margin: 31px 0 0;
+
+  color: var(--text-secondary);
+
+  font-family:
+    Arial,
+    Helvetica,
+    sans-serif;
+
+  font-size: 21px;
+  font-weight: 400;
+
+  line-height: 1.6;
+
+  letter-spacing: 0;
+}
+
+
+/* =========================================================
+   QUOTE
+========================================================= */
+
+.about-quote {
+  display: flex;
+
+  align-items: stretch;
+
+  width: 100%;
+  max-width: 600px;
+
+  margin: 43px 0 0;
+
+  padding: 0;
+
+  border: 0;
+}
+
+.quote-line {
+  flex: 0 0 2px;
+
+  width: 2px;
+  min-height: 77px;
+
+  margin-right: 27px;
+
+  background: var(--accent);
+}
+
+.about-quote p {
+  margin: 1px 0 0;
+
+  color: #eee8e3;
+
+  font-family:
+    Georgia,
+    "Times New Roman",
+    serif;
+
+  font-size: 25px;
+  font-style: italic;
+  font-weight: 400;
+
+  line-height: 1.5;
+
+  letter-spacing: -0.3px;
+}
+
+
+/* =========================================================
+   STATISTICS
+========================================================= */
+
+.about-statistics {
+  display: flex;
+
+  align-items: center;
+
+  margin-top: 49px;
+
+  min-height: 48px;
+}
+
+.about-stat {
+  flex: 0 0 auto;
+}
+
+.stat-value {
+  color: #d8b39a;
+
+  font-family:
+    Georgia,
+    "Times New Roman",
+    serif;
+
+  font-size: 23px;
+  font-weight: 400;
+
+  line-height: 1;
+}
+
+.stat-label {
+  margin-top: 10px;
+
+  color: var(--text-muted);
+
+  font-family:
+    Arial,
+    Helvetica,
+    sans-serif;
+
+  font-size: 13px;
+  font-weight: 400;
+
+  line-height: 1.2;
+
+  letter-spacing: 2px;
+
+  white-space: nowrap;
+}
+
+.statistics-divider {
+  width: 1px;
+  height: 45px;
+
+  margin: 0 44px;
+
+  background: rgba(255, 255, 255, 0.15);
+}
+
+
+/* =========================================================
+   PROFILE CARD
+========================================================= */
+
+.about-profile-card {
+  position: relative;
+
+  width: 555px;
+  height: 670px;
+
+  margin-top: 40px;
+
+  overflow: hidden;
+
+  border: 1px solid var(--border);
+
+  border-radius: 18px;
+
+  background: var(--card-bg);
+
+  box-shadow:
+    0 20px 60px rgba(0, 0, 0, 0.35);
+}
+
+
+/* =========================================================
+   PROFILE IMAGE
+========================================================= */
+
+.about-profile-image {
+  display: block;
+
+  width: 100%;
+  height: 100%;
+
+  object-fit: cover;
+
+  object-position: center top;
+
+  filter: grayscale(100%);
+
+  border: 0;
+}
+
+
+/* =========================================================
+   BOTTOM IMAGE OVERLAY
+========================================================= */
+
+.profile-overlay {
+  position: absolute;
+
+  inset: 0;
+
+  pointer-events: none;
+
+  background:
+    linear-gradient(
+      to bottom,
+      rgba(0, 0, 0, 0) 48%,
+      rgba(0, 0, 0, 0.08) 58%,
+      rgba(0, 0, 0, 0.55) 78%,
+      rgba(0, 0, 0, 0.88) 100%
+    );
+}
+
+
+/* =========================================================
+   PROFILE INFORMATION
+========================================================= */
+
+.profile-information {
+  position: absolute;
+
+  left: 30px;
+  right: 30px;
+  bottom: 48px;
+
+  display: flex;
+
+  align-items: flex-end;
+
+  justify-content: space-between;
+
+  gap: 20px;
+}
+
+
+/* =========================================================
+   CEO
+========================================================= */
+
+.profile-person {
+  min-width: 0;
+}
+
+.profile-role {
+  display: block;
+
+  margin-bottom: 8px;
+
+  color: var(--accent);
+
+  font-family:
+    Arial,
+    Helvetica,
+    sans-serif;
+
+  font-size: 12px;
+  font-weight: 500;
+
+  line-height: 1;
+
+  letter-spacing: 5px;
+
+  text-transform: uppercase;
+}
+
+.profile-person h3 {
+  margin: 0;
+
+  color: #f2efec;
+
+  font-family:
+    Georgia,
+    "Times New Roman",
+    serif;
+
+  font-size: 23px;
+  font-weight: 400;
+
+  line-height: 1.15;
+}
+
+
+/* =========================================================
+   LOCATION BADGE
+========================================================= */
+
+.profile-location {
+  display: inline-flex;
+
+  align-items: center;
+  justify-content: center;
+
+  min-height: 33px;
+
+  padding: 7px 16px;
+
+  border: 1px solid rgba(255, 255, 255, 0.25);
+
+  border-radius: 30px;
+
+  color: #d4d0cd;
+
+  font-family:
+    Arial,
+    Helvetica,
+    sans-serif;
+
+  font-size: 12px;
+  font-weight: 400;
+
+  line-height: 1;
+
+  letter-spacing: 1px;
+
+  white-space: nowrap;
+}
+
+
+/* =========================================================
+   =========================================================
+   SCROLL REVEAL ANIMATION SYSTEM
+   =========================================================
+========================================================= */
+
+
+/* =========================================================
+   INITIAL STATE
+========================================================= */
+
+.about-us .about-eyebrow,
+.about-us .about-description,
+.about-us .about-quote p,
+.about-us .about-stat,
+.about-us .statistics-divider,
+.about-us .profile-information {
+  opacity: 0;
+}
+
+
+/* =========================================================
+   EYEBROW
+========================================================= */
+
+.about-us .about-eyebrow {
+  transform: translateY(25px);
+}
+
+
+/* =========================================================
+   DESCRIPTION
+========================================================= */
+
+.about-us .about-description {
+  transform: translateY(35px);
+}
+
+
+/* =========================================================
+   TITLE
+========================================================= */
+
+.about-us .about-title-line {
+  overflow: hidden;
+}
+
+.about-us .about-title-inner {
+  transform: translateY(110%);
+  opacity: 0;
+}
+
+
+/* =========================================================
+   QUOTE TEXT
+========================================================= */
+
+.about-us .about-quote p {
+  transform: translateY(30px);
+}
+
+
+/* =========================================================
+   QUOTE LINE
+========================================================= */
+
+.about-us .quote-line {
+  transform: scaleY(0);
+
+  transform-origin: top center;
+}
+
+
+/* =========================================================
+   STATISTICS
+========================================================= */
+
+.about-us .about-stat-1 {
+  transform: translateY(25px);
+}
+
+.about-us .about-stat-2 {
+  transform: translateY(25px);
+}
+
+.about-us .statistics-divider {
+  transform: scaleY(0);
+
+  transform-origin: center;
+}
+
+
+/* =========================================================
+   PROFILE CARD
+========================================================= */
+
+.about-us .about-profile-card {
+  opacity: 0;
+
+  transform:
+    translateY(55px)
+    scale(0.97);
+}
+
+
+/* =========================================================
+   PROFILE IMAGE
+========================================================= */
+
+.about-us .about-profile-image {
+  transform: scale(1.08);
+
+  transition:
+    transform 1.5s cubic-bezier(0.22, 1, 0.36, 1),
+    filter 1.2s ease;
+}
+
+
+/* =========================================================
+   PROFILE INFORMATION
+========================================================= */
+
+.about-us .profile-information {
+  transform: translateY(30px);
+}
+
+
+/* =========================================================
+   PROFILE ROLE
+========================================================= */
+
+.about-us .profile-role {
+  opacity: 0;
+
+  transform: translateY(15px);
+}
+
+
+/* =========================================================
+   PROFILE NAME
+========================================================= */
+
+.about-us .profile-person h3 {
+  opacity: 0;
+
+  transform: translateY(20px);
+}
+
+
+/* =========================================================
+   PROFILE LOCATION
+========================================================= */
+
+.about-us .profile-location {
+  opacity: 0;
+
+  transform: translateX(25px);
+}
+
+
+/* =========================================================
+   ACTIVE / VISIBLE STATE
+========================================================= */
+
+
+/* ---------------------------------------------------------
+   Eyebrow
+--------------------------------------------------------- */
+
+.about-us.about-visible .about-eyebrow {
+  opacity: 1;
+
+  transform: translateY(0);
+
+  transition:
+    opacity 0.8s ease,
+    transform 0.8s cubic-bezier(0.22, 1, 0.36, 1);
+
+  transition-delay: 0.05s;
+}
+
+
+/* ---------------------------------------------------------
+   First Heading Line
+--------------------------------------------------------- */
+
+.about-us.about-visible
+.about-title-line:nth-child(1)
+.about-title-inner {
+  opacity: 1;
+
+  transform: translateY(0);
+
+  transition:
+    opacity 0.9s ease,
+    transform 1s cubic-bezier(0.22, 1, 0.36, 1);
+
+  transition-delay: 0.20s;
+}
+
+
+/* ---------------------------------------------------------
+   Second Heading Line
+--------------------------------------------------------- */
+
+.about-us.about-visible
+.about-title-line:nth-child(2)
+.about-title-inner {
+  opacity: 1;
+
+  transform: translateY(0);
+
+  transition:
+    opacity 0.9s ease,
+    transform 1s cubic-bezier(0.22, 1, 0.36, 1);
+
+  transition-delay: 0.38s;
+}
+
+
+/* ---------------------------------------------------------
+   Description
+--------------------------------------------------------- */
+
+.about-us.about-visible .about-description {
+  opacity: 1;
+
+  transform: translateY(0);
+
+  transition:
+    opacity 0.9s ease,
+    transform 0.9s cubic-bezier(0.22, 1, 0.36, 1);
+
+  transition-delay: 0.58s;
+}
+
+
+/* ---------------------------------------------------------
+   Quote Line
+--------------------------------------------------------- */
+
+.about-us.about-visible .quote-line {
+  transform: scaleY(1);
+
+  transition:
+    transform 0.8s cubic-bezier(0.22, 1, 0.36, 1);
+
+  transition-delay: 0.78s;
+}
+
+
+/* ---------------------------------------------------------
+   Quote Text
+--------------------------------------------------------- */
+
+.about-us.about-visible .about-quote p {
+  opacity: 1;
+
+  transform: translateY(0);
+
+  transition:
+    opacity 0.8s ease,
+    transform 0.8s cubic-bezier(0.22, 1, 0.36, 1);
+
+  transition-delay: 0.90s;
+}
+
+
+/* ---------------------------------------------------------
+   First Statistic
+--------------------------------------------------------- */
+
+.about-us.about-visible .about-stat-1 {
+  opacity: 1;
+
+  transform: translateY(0);
+
+  transition:
+    opacity 0.7s ease,
+    transform 0.7s cubic-bezier(0.22, 1, 0.36, 1);
+
+  transition-delay: 1.08s;
+}
+
+
+/* ---------------------------------------------------------
+   Divider
+--------------------------------------------------------- */
+
+.about-us.about-visible .statistics-divider {
+  transform: scaleY(1);
+
+  transition:
+    transform 0.7s cubic-bezier(0.22, 1, 0.36, 1);
+
+  transition-delay: 1.18s;
+}
+
+
+/* ---------------------------------------------------------
+   Second Statistic
+--------------------------------------------------------- */
+
+.about-us.about-visible .about-stat-2 {
+  opacity: 1;
+
+  transform: translateY(0);
+
+  transition:
+    opacity 0.7s ease,
+    transform 0.7s cubic-bezier(0.22, 1, 0.36, 1);
+
+  transition-delay: 1.28s;
+}
+
+
+/* =========================================================
+   PROFILE CARD REVEAL
+========================================================= */
+
+.about-us.about-visible .about-profile-card {
+  opacity: 1;
+
+  transform:
+    translateY(0)
+    scale(1);
+
+  transition:
+    opacity 1s ease,
+    transform 1.15s cubic-bezier(0.22, 1, 0.36, 1);
+
+  transition-delay: 0.35s;
+}
+
+
+/* =========================================================
+   PROFILE IMAGE ZOOM OUT
+========================================================= */
+
+.about-us.about-visible .about-profile-image {
+  transform: scale(1);
+
+  transition:
+    transform 1.8s cubic-bezier(0.22, 1, 0.36, 1);
+
+  transition-delay: 0.35s;
+}
+
+
+/* =========================================================
+   PROFILE INFORMATION
+========================================================= */
+
+.about-us.about-visible .profile-information {
+  opacity: 1;
+
+  transform: translateY(0);
+
+  transition:
+    opacity 0.8s ease,
+    transform 0.8s cubic-bezier(0.22, 1, 0.36, 1);
+
+  transition-delay: 0.95s;
+}
+
+
+/* =========================================================
+   PROFILE ROLE
+========================================================= */
+
+.about-us.about-visible .profile-role {
+  opacity: 1;
+
+  transform: translateY(0);
+
+  transition:
+    opacity 0.6s ease,
+    transform 0.6s cubic-bezier(0.22, 1, 0.36, 1);
+
+  transition-delay: 1.15s;
+}
+
+
+/* =========================================================
+   PROFILE NAME
+========================================================= */
+
+.about-us.about-visible .profile-person h3 {
+  opacity: 1;
+
+  transform: translateY(0);
+
+  transition:
+    opacity 0.7s ease,
+    transform 0.7s cubic-bezier(0.22, 1, 0.36, 1);
+
+  transition-delay: 1.28s;
+}
+
+
+/* =========================================================
+   PROFILE LOCATION
+========================================================= */
+
+.about-us.about-visible .profile-location {
+  opacity: 1;
+
+  transform: translateX(0);
+
+  transition:
+    opacity 0.7s ease,
+    transform 0.7s cubic-bezier(0.22, 1, 0.36, 1);
+
+  transition-delay: 1.42s;
+}
+
+
+/* =========================================================
+   1440px
+========================================================= */
+
+@media (max-width: 1440px) {
+
+  .about-us-container {
+    width: min(100% - 16%, 1320px);
+
+    grid-template-columns:
+      minmax(0, 1fr)
+      525px;
+
+    column-gap: 75px;
+  }
+
+  .about-profile-card {
+    width: 525px;
+  }
+
+  .about-title {
+    font-size: 49px;
+  }
+}
+
+
+/* =========================================================
+   1366px
+========================================================= */
+
+@media (max-width: 1366px) {
+
+  .about-us-container {
+    width: calc(100% - 150px);
+
+    grid-template-columns:
+      minmax(0, 1fr)
+      510px;
+
+    column-gap: 65px;
+  }
+
+  .about-profile-card {
+    width: 510px;
+    height: 650px;
+  }
+
+  .about-title {
+    font-size: 47px;
+  }
+
+  .about-description {
+    font-size: 20px;
+  }
+}
+
+
+/* =========================================================
+   1200px
+========================================================= */
+
+@media (max-width: 1200px) {
+
+  .about-us {
+    min-height: 800px;
+  }
+
+  .about-us-container {
+    width: calc(100% - 100px);
+
+    min-height: 800px;
+
+    grid-template-columns:
+      minmax(0, 1fr)
+      450px;
+
+    column-gap: 50px;
+  }
+
+  .about-us-content {
+    padding-top: 78px;
+  }
+
+  .about-eyebrow {
+    margin-bottom: 34px;
+    font-size: 13px;
+  }
+
+  .about-title {
+    font-size: 43px;
+  }
+
+  .about-description {
+    max-width: 570px;
+
+    margin-top: 28px;
+
+    font-size: 18px;
+  }
+
+  .about-quote {
+    margin-top: 37px;
+  }
+
+  .about-quote p {
+    font-size: 22px;
+  }
+
+  .about-statistics {
+    margin-top: 58px;
+  }
+
+  .about-profile-card {
+    width: 450px;
+    height: 600px;
+
+    margin-top: 35px;
+  }
+}
+
+
+/* =========================================================
+   1024px
+========================================================= */
+
+@media (max-width: 1024px) {
+
+  .about-us {
+    min-height: 760px;
+  }
+
+  .about-us-container {
+    width: calc(100% - 70px);
+
+    min-height: 760px;
+
+    grid-template-columns:
+      minmax(0, 1fr)
+      390px;
+
+    column-gap: 35px;
+  }
+
+  .about-us-content {
+    padding-top: 70px;
+  }
+
+  .about-eyebrow {
+    font-size: 12px;
+
+    letter-spacing: 5px;
+
+    margin-bottom: 30px;
+  }
+
+  .about-title {
+    font-size: 37px;
+
+    letter-spacing: -1px;
+  }
+
+  .about-description {
+    max-width: 500px;
+
+    font-size: 17px;
+
+    line-height: 1.55;
+
+    margin-top: 25px;
+  }
+
+  .about-quote {
+    margin-top: 34px;
+
+    max-width: 490px;
+  }
+
+  .about-quote p {
+    font-size: 20px;
+  }
+
+  .quote-line {
+    margin-right: 21px;
+
+    min-height: 68px;
+  }
+
+  .about-statistics {
+    margin-top: 53px;
+  }
+
+  .stat-value {
+    font-size: 20px;
+  }
+
+  .stat-label {
+    font-size: 11px;
+
+    letter-spacing: 1.5px;
+  }
+
+  .statistics-divider {
+    margin: 0 28px;
+  }
+
+  .about-profile-card {
+    width: 390px;
+    height: 560px;
+
+    margin-top: 35px;
+  }
+
+  .profile-information {
+    left: 25px;
+    right: 25px;
+    bottom: 35px;
+  }
+}
+
+
+/* =========================================================
+   768px
+========================================================= */
+
+@media (max-width: 768px) {
+
+  .about-us {
+    min-height: auto;
+  }
+
+  .about-us-container {
+    width: min(100% - 40px, 600px);
+
+    min-height: auto;
+
+    display: flex;
+
+    flex-direction: column;
+
+    align-items: center;
+
+    padding-bottom: 70px;
+  }
+
+  .about-us-content {
+    max-width: 600px;
+
+    padding-top: 65px;
+  }
+
+  .about-eyebrow {
+    margin-bottom: 29px;
+  }
+
+  .about-title {
+    max-width: 100%;
+
+    font-size: 40px;
+  }
+
+  .about-description {
+    max-width: 100%;
+
+    font-size: 17px;
+  }
+
+  .about-quote {
+    max-width: 100%;
+  }
+
+  .about-statistics {
+    margin-top: 55px;
+  }
+
+  .about-profile-card {
+    width: min(100%, 555px);
+
+    height: 620px;
+
+    margin-top: 55px;
+  }
+}
+
+
+/* =========================================================
+   600px
+========================================================= */
+
+@media (max-width: 600px) {
+
+  .about-us-container {
+    width: calc(100% - 32px);
+
+    padding-bottom: 55px;
+  }
+
+  .about-us-content {
+    padding-top: 52px;
+  }
+
+  .about-eyebrow {
+    font-size: 11px;
+
+    letter-spacing: 4px;
+
+    margin-bottom: 25px;
+  }
+
+  .about-title {
+    font-size: 38px;
+
+    line-height: 1.07;
+
+    letter-spacing: -0.8px;
+  }
+
+  .about-description {
+    margin-top: 25px;
+
+    font-size: 17px;
+
+    line-height: 1.6;
+  }
+
+  .about-quote {
+    margin-top: 35px;
+  }
+
+  .about-quote p {
+    font-size: 20px;
+
+    line-height: 1.45;
+  }
+
+  .quote-desktop-break {
+    display: none;
+  }
+
+  .quote-line {
+    min-height: 70px;
+
+    margin-right: 18px;
+  }
+
+  .about-statistics {
+    width: 100%;
+
+    margin-top: 52px;
+  }
+
+  .stat-label {
+    white-space: normal;
+
+    max-width: 180px;
+
+    line-height: 1.35;
+  }
+
+  .statistics-divider {
+    margin: 0 25px;
+  }
+
+  .about-profile-card {
+    width: 100%;
+
+    height: 570px;
+
+    margin-top: 48px;
+
+    border-radius: 16px;
+  }
+
+  .profile-information {
+    left: 24px;
+    right: 24px;
+    bottom: 32px;
+  }
+}
+
+
+/* =========================================================
+   480px
+========================================================= */
+
+@media (max-width: 480px) {
+
+  .about-us-container {
+    width: calc(100% - 32px);
+  }
+
+  .about-us-content {
+    padding-top: 45px;
+  }
+
+  .about-eyebrow {
+    font-size: 11px;
+
+    letter-spacing: 3.5px;
+
+    margin-bottom: 24px;
+  }
+
+  .about-title {
+    font-size: 32px;
+
+    line-height: 1.08;
+  }
+
+  .about-description {
+    margin-top: 22px;
+
+    font-size: 15px;
+
+    line-height: 1.6;
+  }
+
+  .about-quote {
+    margin-top: 30px;
+  }
+
+  .about-quote p {
+    font-size: 18px;
+
+    line-height: 1.5;
+  }
+
+  .quote-line {
+    min-height: 62px;
+
+    margin-right: 15px;
+  }
+
+  .about-statistics {
+    margin-top: 45px;
+
+    align-items: flex-start;
+  }
+
+  .stat-value {
+    font-size: 19px;
+  }
+
+  .stat-label {
+    max-width: 145px;
+
+    margin-top: 10px;
+
+    font-size: 10px;
+
+    letter-spacing: 1.3px;
+  }
+
+  .statistics-divider {
+    height: 42px;
+
+    margin: 0 17px;
+  }
+
+  .about-profile-card {
+    height: 500px;
+
+    margin-top: 42px;
+
+    border-radius: 15px;
+  }
+
+  .profile-information {
+    left: 21px;
+    right: 21px;
+
+    bottom: 27px;
+
+    gap: 10px;
+  }
+
+  .profile-role {
+    font-size: 10px;
+
+    letter-spacing: 4px;
+
+    margin-bottom: 7px;
+  }
+
+  .profile-person h3 {
+    font-size: 20px;
+  }
+
+  .profile-location {
+    min-height: 30px;
+
+    padding: 6px 11px;
+
+    font-size: 9px;
+
+    letter-spacing: 0.8px;
+  }
+}
+
+
+/* =========================================================
+   390px
+========================================================= */
+
+@media (max-width: 390px) {
+
+  .about-us-container {
+    width: calc(100% - 28px);
+  }
+
+  .about-us-content {
+    padding-top: 40px;
+  }
+
+  .about-eyebrow {
+    font-size: 10px;
+
+    letter-spacing: 3px;
+
+    margin-bottom: 22px;
+  }
+
+  .about-title {
+    font-size: 29px;
+
+    letter-spacing: -0.5px;
+  }
+
+  .about-description {
+    margin-top: 20px;
+
+    font-size: 14px;
+
+    line-height: 1.6;
+  }
+
+  .about-quote {
+    margin-top: 28px;
+  }
+
+  .about-quote p {
+    font-size: 17px;
+  }
+
+  .quote-line {
+    min-height: 58px;
+
+    margin-right: 13px;
+  }
+
+  .about-statistics {
+    margin-top: 42px;
+  }
+
+  .stat-value {
+    font-size: 18px;
+  }
+
+  .stat-label {
+    max-width: 125px;
+
+    font-size: 9px;
+
+    letter-spacing: 1px;
+  }
+
+  .statistics-divider {
+    height: 40px;
+
+    margin: 0 13px;
+  }
+
+  .about-profile-card {
+    height: 460px;
+
+    margin-top: 38px;
+
+    border-radius: 14px;
+  }
+
+  .profile-information {
+    left: 18px;
+    right: 18px;
+
+    bottom: 23px;
+  }
+
+  .profile-role {
+    font-size: 9px;
+
+    letter-spacing: 3px;
+  }
+
+  .profile-person h3 {
+    font-size: 18px;
+  }
+
+  .profile-location {
+    padding: 6px 9px;
+
+    font-size: 8px;
+  }
+}
+
+
+/* =========================================================
+   320px
+========================================================= */
+
+@media (max-width: 320px) {
+
+  .about-us-container {
+    width: calc(100% - 24px);
+  }
+
+  .about-us-content {
+    padding-top: 35px;
+  }
+
+  .about-eyebrow {
+    font-size: 9px;
+
+    letter-spacing: 2.5px;
+
+    margin-bottom: 20px;
+  }
+
+  .about-title {
+    font-size: 26px;
+
+    line-height: 1.08;
+  }
+
+  .about-description {
+    margin-top: 18px;
+
+    font-size: 14px;
+
+    line-height: 1.55;
+  }
+
+  .about-quote {
+    margin-top: 25px;
+  }
+
+  .about-quote p {
+    font-size: 16px;
+
+    line-height: 1.45;
+  }
+
+  .quote-line {
+    min-height: 55px;
+
+    margin-right: 11px;
+  }
+
+  .about-statistics {
+    margin-top: 38px;
+
+    flex-wrap: wrap;
+
+    row-gap: 25px;
+  }
+
+  .stat-value {
+    font-size: 17px;
+  }
+
+  .stat-label {
+    max-width: 120px;
+
+    font-size: 8px;
+
+    letter-spacing: 0.8px;
+  }
+
+  .statistics-divider {
+    height: 38px;
+
+    margin: 0 10px;
+  }
+
+  .about-profile-card {
+    height: 420px;
+
+    margin-top: 34px;
+
+    border-radius: 13px;
+  }
+
+  .profile-information {
+    left: 15px;
+    right: 15px;
+
+    bottom: 19px;
+  }
+
+  .profile-role {
+    font-size: 8px;
+
+    letter-spacing: 2.5px;
+  }
+
+  .profile-person h3 {
+    font-size: 17px;
+  }
+
+  .profile-location {
+    padding: 5px 7px;
+
+    font-size: 7px;
+
+    letter-spacing: 0.6px;
+  }
+}
+
+
+/* =========================================================
+   REDUCED MOTION
+========================================================= */
+
+@media (prefers-reduced-motion: reduce) {
+
+  .about-us .about-eyebrow,
+  .about-us .about-description,
+  .about-us .about-quote p,
+  .about-us .about-stat,
+  .about-us .statistics-divider,
+  .about-us .profile-information,
+  .about-us .about-profile-card,
+  .about-us .about-title-inner,
+  .about-us .quote-line,
+  .about-us .profile-role,
+  .about-us .profile-person h3,
+  .about-us .profile-location,
+  .about-us .about-profile-image {
+    opacity: 1;
+
+    transform: none !important;
+
+    transition: none !important;
+  }
+}
